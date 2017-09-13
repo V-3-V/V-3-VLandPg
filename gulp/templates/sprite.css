@@ -1,0 +1,33 @@
+/* Do not edit modules/_sprite.css directly as it is
+  auto generated from gulp/templates/sprite.css template file */
+
+/*  Moustashe template engine has been used
+    {{{sprite}}}  - sprite is variable
+    where gulp-svg-sprite keeps automatically
+    generated file name,  three curvy braces
+    prevents special symbols from  escaping -
+    keeps them (forward slash, etc) as it is
+    The variables base, sprite, wight.outer, position.relative.xy, etc
+    are described in https://github.com/jkphl/gulp-svg-sprite
+    documentation: https://github.com/jkphl/svg-sprite#configuration-basics
+*/
+
+/* Generate list of classes using BEM naming convention */
+{{#shapes}}
+  {{#first}}
+    .icon {
+      background-image: url('../../assets/images/sprites/{{{sprite}}}');
+    }
+    /* custom modernizr.js script set class="no-svg" (SVG is not supported by  client browser)*/
+    /* therefore background image should be in PNG format sprite.png */
+    .no-svg .icon {
+      background-image: url('../../assets/images/sprites/{{#replaceSvgWithPng}}{{{sprite}}}{{/replaceSvgWithPng}}');
+    }
+  {{/first}}
+  /* {{base}} icon CSS map in the sprite file */
+  .icon--{{base}} {
+    width: {{width.outer}}px;
+    height: {{height.outer}}px;
+    background-position: {{position.relative.xy}} ;
+  }
+{{/shapes}}

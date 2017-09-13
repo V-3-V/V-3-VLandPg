@@ -1,0 +1,23 @@
+/* Global CSS  to trickle down to each element */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* In recent years box-sizing: border-box CSS property  */
+/* Is added into global setting for each element to overwrite
+   browsers defaults */
+/* Browser will not add padding to the total width of row */
+* {
+  box-sizing: border-box;
+}
+
+/* Links are orange colored globally  */
+a {
+  color: $mainOrange; 
+}

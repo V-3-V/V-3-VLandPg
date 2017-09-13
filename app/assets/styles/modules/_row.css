@@ -1,0 +1,154 @@
+/* Reusable column layout pattern */
+/* Assuming 12 column vertical grid layout */
+.row {
+  /* better way to clear floats is ::after pseudo selector */
+  /* the has been moved to base/_mixins "clearfix" for reusability sake */
+  @mixin clearfix;
+  /*  One of the possible implementations:
+  &::after {
+    content: "";
+    clear:both;
+    display: table;
+  }
+  */
+  /* background-color: yellow; -- for debugging purposes  */
+
+    &--t-padding { /* Top padding of the row */
+      padding-top: 80px ; /* to compensate margin: -80px  */
+    }
+
+
+   /* --gutters are empty space between columns */
+   &--gutters {
+     margin-right: -65px;
+     /* to get rid of the last column right padding  */
+   }
+
+   &--gutters-large {
+     margin-right: -100px;
+   }
+
+   &--gutters-small {
+     margin-right: -45px;
+   }
+
+  &--gutters > div { /* add padding to direct childs (<div>) */
+    padding-right: 65px;
+    /* Browser will not add padding to the total width of row */
+    /* In recent years box-sizing: border-box CSS property  */
+    /* It is added into global setting for each element to overwrite
+       browsers defaults ( missing padding in the width calculations )
+       See base/_global.css */
+
+  }
+
+  &--gutters-large > div {
+      padding-right: 100px;
+  }
+
+  &--gutters-small > div {
+    padding-right: 45px;
+  }
+
+  /* for tiny and small size screns, add bottom margin */
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
+  @mixin atMedium {
+    /* starting medium size screens,
+            reset margin-bottom to 0 */
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+     /* use two columns layout on medium or larger screens */
+      &__medium-4 {
+        float: left;
+        width: 33.33%; /* 4/12 = 33.33% */
+      }
+
+      &__medium-4--larger {
+        width: 37%; /* 4/12 = 33.33% */
+      }
+
+      &__medium-6 {
+        float: left;
+        width: 50%; /* 6/12 = 50% */
+      }
+
+      &__medium-8 {
+        float: left;
+        width: 66.66%; /* 8/12 = 66.66% */
+      }
+
+      &__medium-8--smaller {
+        width: 63%; /* 8/12 = 66.66% */
+      }
+  }
+
+  @mixin atLarge {
+    /* starting medium size screens,
+            reset margin-bottom to 0 */
+    &__b-margin-until-large {
+      margin-bottom: 0;
+    }
+     /* use two columns layout on medium or larger screens */
+      &__large-4 {
+        float: left;
+        width: 33.33%; /* 4/12 = 33.33% */
+      }
+
+      &__large-4--larger {
+        width: 37%; /* 4/12 = 33.33% */
+      }
+
+      &__large-6 {
+        float: left;
+        width: 50%; /* 6/12 = 50% */
+      }
+
+      &__large-8 {
+        float: left;
+        width: 66.66%; /* 8/12 = 66.66% */
+      }
+
+      &__large-8--smaller {
+        width: 63%; /* 8/12 = 66.66% */
+      }
+  }
+
+  /* Begin Equal Height Rules ( Testimonials section, etc) */
+  /*  Works for 96% of browsers, that support flexbox */
+  /* Modernizr.js  sets up the class="flexbox" for us, when it is supported by client's br.*/
+  .flexbox &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;  /* Using flex box CSS featue */
+    }
+    /* Direct descendants <div> ( Columns in this particular case ) */
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+  .flexbox &--equal-height-at-large {
+    @mixin atLarge {
+      display: flex;  /* Using flex box CSS featue */
+    }
+    /* Direct descendants <div> ( Columns in this particular case ) */
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+
+}
+
+/* <div class="clear-me">  MUST come after all the floating siblings */
+/* Main parent <div class="row" will know how tall he is */
+/* Is not recommended because the empty div element created in the HTML
+  NOT the best practice  */
+/* .clear-me {
+    clear: both;
+}
+*/

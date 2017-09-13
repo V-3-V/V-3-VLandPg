@@ -1,0 +1,18 @@
+/* Generic Styling for paragraphs text and links (<a>) in it  */
+/* Used in the parent(s) of the <p>, etc elements */
+.generic-content-container {
+  /* background-color: yellow; */
+  p {
+    font-weight: 300;
+    line-height: 1.65; /* no unit measurement required */
+    /* base style does not require font size, usually */
+    margin:0 0 1.8rem 0; /* clockwise: top right botom left  */
+    @mixin atSmall {
+      font-size: 1.125rem;
+    }
+  }
+  p a {
+    font-weight: 700;
+  }
+
+}

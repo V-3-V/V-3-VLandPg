@@ -1,0 +1,48 @@
+/* Pattern of vertical spacing, etc between page sections */
+.page-section {
+  /* Mobile screens support added*/
+  padding: 1.2rem 0; /* new baseline for a small screens */
+
+  @mixin atMedium {  /* Medium sized screen */
+    padding: 4.5rem 0; /* padding top, bottom:4.5rem left,right: 0 */
+  }
+
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
+
+    @mixin atMedium {
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+
+    @mixin atLarge {
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+    color: #FFF;
+  }
+  /* .page-section--testimonials */
+  &--testimonials {
+    /* base settings for smaller screens */
+    background-color: #e0e6ef; /* nice background color */
+
+    /* HTML element has CSS class="lazyload",
+      When it is time come  to  load something, NPM package loads it,
+      and  then replaces lazyload class name by lazyloaded name.
+      Following "mixin" CSS rule applies when class="lazyloaded" presents
+    */
+    @mixin atLarge {
+      &.lazyloaded {
+        background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+        background-size: cover;
+      }
+    }
+
+  }
+}

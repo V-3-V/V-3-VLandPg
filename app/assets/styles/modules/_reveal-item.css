@@ -1,0 +1,12 @@
+/* module/_reveal-item */
+
+.reveal-item {
+  opacity: 0; /* completely  invisible */
+  transition: all 1.5s ease-out;
+  /* Fine tune a liitle */
+  transform: scale(1.15);
+  &--is-visible {
+    opacity: 1; /* fully visible */
+    transform: scale(1);
+  }
+}

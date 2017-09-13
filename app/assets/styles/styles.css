@@ -1,0 +1,40 @@
+/* Import normalize.css npm package */
+@import 'normalize.css';
+/* Import POSTCSS base of the project*/
+@import 'base/_variables';
+@import 'base/_mixins';
+/* Global CSS file is using _variables and _mixins */
+@import 'base/_global';
+/* Import POSTCSS modules of the project*/
+@import "modules/_large-hero";
+@import "modules/_btn";
+/* Import padding-wrapper file  */
+@import "modules/_wrapper";
+/* Import page section file */
+@import "modules/_page-section";
+/* Import headline block file */
+@import "modules/_headline";
+/* Import reusable column pattern file*/
+@import "modules/_row";
+/* Generic content container. Temp deviation from BEM */
+@import "modules/_generic-content-container";
+/* Section title "our features" */
+@import "modules/_section-title";
+/* Section Our features --> feature-item */
+@import "modules/_feature-item";
+/* Section Testimonials  */
+@import "modules/_testimonial";
+/* Sprite file  AUTO generated import */
+@import "modules/_sprite";
+/* Site footer */
+@import "modules/_site-footer";
+/* Site header */
+@import "modules/_site-header";
+/* nav Primary navigation style */
+@import "modules/_primary-nav";
+/* Reveal item new class="reveal-item" */
+@import "modules/_reveal-item";
+/* Create Overlay, or Modal, or light box */
+@import "modules/_modal";
+/* Social Icons */
+@import "modules/_social-icons";

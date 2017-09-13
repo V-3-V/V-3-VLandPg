@@ -1,0 +1,31 @@
+/* Mixins are "reusable bits of code" plug-in */
+
+
+@define-mixin atSmall {
+  @media ( min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media ( min-width: 800px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  /* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+  @media ( min-width: 1010px) {
+    @mixin-content;
+  }
+}
+
+/* Mixin to clear floats in .css files */
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear:both;
+    display: table;
+  }
+}

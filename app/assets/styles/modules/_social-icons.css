@@ -1,0 +1,26 @@
+/* Social Icons */
+.social-icons {
+   text-align: center;
+
+   &__icon {  /* new rule targets social-icons__icon element */
+     background-color: $mainOrange;
+     display: inline-block;
+     margin: 0 5px 5px 5px; /* up right bottom left */
+     width: 72px;
+     height: 72px;
+     position: relative; /* Parents must be relative for absolute chilt */
+
+     @mixin atSmall {
+       width: 72px;
+       margin: 0 5px; /* vertical horizontal */
+     }
+
+     .icon { /* block property helps icon image occupy space */
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); /* pull back left half of the width , pull back up half of the height  */
+     }
+   }
+}

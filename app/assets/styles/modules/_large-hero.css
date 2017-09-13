@@ -1,0 +1,75 @@
+.large-hero { /* POSTCSS will substittute "&" by .large-hero in nested BEM classes */
+  border-bottom: 10px solid $mainBlue; /* Add bar line at the bottom */
+  position: relative;
+  /* nested BEM .large-hero__<classes> */
+  &__image {
+      display: block; /* By default was: inline. Browser believes that image
+                          is something like line of text.
+                          Text line requires empty space underneath for letters
+                          like: 'y', 'g' */
+      /* display: block  means that element aligns perfectly like <div>
+          and no extra space required   */
+  }
+
+  &__text-content {
+    padding-top: 88px; /* give some space to nav bar + logo in _side-header.css
+                (padding-top: 88px)  for smaller than medium screens where Logo is limiting factor*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    @mixin atMedium { /* padding for padding-top + logo  */
+      padding-top: 60px;
+    }
+  }
+
+  /* Example of mobile first pattern */
+  &__title {
+    /* baselne for all screens including super tiny */
+    font-weight: 300;
+    color: $mainBlue;
+    margin:0;
+    font-size: 2.4rem;
+    /* Small screens ~ 530px */
+    @mixin atSmall {
+      font-size: 4.8rem;
+    }
+    /* Medium screens ~ 800px */
+    @mixin atMedium {
+      font-size: 4.8rem;
+    }
+    /* Large sceens ~ 1200px */
+    @mixin atLarge {
+      font-size: 4.8rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    margin:0;
+    font-size: 1.5rem;
+    /* starting from Small screens ~ 530px, use 2.9rem fontsize */
+    @mixin atSmall {
+      font-size: 2.9rem;
+    }
+  }
+
+  &__description {
+    color: #FFF;
+    font-size: 1.1rem; /* for tiny screens */
+    font-weight: 100;
+    font-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* starting from Small screens ~ 530px, use 1.875rem fontsize */
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
+
+}

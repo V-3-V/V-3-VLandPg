@@ -1,0 +1,155 @@
+/* Site Header file */
+.site-header {
+  padding:10px 0;  /* padding 10 px from design file */
+  position: absolute; /* take off from normal flow */
+  width: 100%;  /* use all availiable width */
+  z-index: 2; /* (2 > nothing ) put on top of large-herow section */
+  transition: background-color .3s ease-out; /* transition for a smaller screens */
+
+
+  /* site-header--is-expanded  (MobileMenu.js) */
+  &--is-expanded {
+    background-color: rgba($mainBlue, .55 ); /* 55% opacity*/
+  }
+
+  @mixin atMedium { /* Nav bar is for medium and large screens */
+    position: fixed;
+    /* !!! Where postcss plugin postcss-hexrgba will transform #ffffff to rgba() format */
+    background-color: rgba($mainBlue,.3); /* $mainBlue = #2f5572 */
+    /* site-header--dark  CSS class for "fixed header" feature */
+    &--dark {
+      background-color: rgba(23,51,72,.85); /* darker blue color for fixed header */
+    }
+  }
+
+  /* site-header__btn-container */
+  &__btn-container {
+
+    @mixin atMedium { /* float to right for medium to large screens */
+      float: right;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0 ;  /* compansate for padding in class="site-header" */
+
+    left: 50%; /* logo to the right half of the screen */
+    transform: translateX(-50%) scale(.8); /* then move left 50%
+                  of its own width and scale down to 80% */
+    transition: transform .3s ease-out;  /* Transition animation for shrinking Logo in stiky-header */
+    transform-origin: 50% 0%; /* by default, horizontal 50% and vertical 50%
+                  Then we change to 0% vertical origin point, and logo moves up  */
+
+    background-color: $mainBlue;
+    padding: 25px 36px;
+
+    @mixin atMedium {  /* position logo for larger screens */
+      left: auto; /* undo left: of the small screens*/
+      transform: translateX(0); /* undo transform: for smaller screens*/
+      /* Shrink Logo if the sticky header is scrolling dowm .i.e ".site-header--dark" class is present */
+      .site-header--dark & {
+        transform: scale(.56);  /* scale reduced to .56 from .57 to accomodate extra padding in the sprite.svg/.png file */
+      }
+    }
+  }
+
+  &__logo__graphic {
+    text-indent: -9999px; /* hide text without hiding element itself */
+  }
+
+  &__menu-icon { /* mobile icon - sandwich */
+    width: 20px;
+    height: 19px;
+    /* background-color: #FFF; // commented out to make it invisible */
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+
+    /* Sandwich menue icon Animating Hamburger */
+    /* Horiz bar: class= site-header__menu-icon__top ( MobileMenu.js ) */
+    &::before {
+      content: "" ; /* to make the pseudo element appear on screen */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 0; /* rotation point in 50% 50% (middle point) by default */
+      transition: transform .3s ease-out;
+    }
+
+    /* site-header__menu-icon__middle ( MobileMenu.js )*/
+    &__middle {
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transition: all .3s ease-out; /* transition all properties, baside opacity */
+      transform-origin: 0 50%;  /* reason: middle bar is fading to the left */
+    }
+
+    /* site-header__menu-icon__bottom ( MobileMenu.js )*/
+    &::after {
+      content: ""; /* appear on the sreen */
+      position: absolute;
+      bottom: 0; /* at the very bottom :-) */
+      left: 0;
+      width: 20px;
+      height: 3px;
+      background-color: #FFF;
+      transform-origin: 0 100%;
+      transition: transform .3s ease-out;
+    }
+
+    @mixin atMedium { /* do not show on larger screens */
+      display: none;
+    }
+  }
+
+  /* Create  X from the three bars "sandwich menu"  */
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.25);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0; /* still present, but invisible */
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
+  }
+
+  &__menu-content {
+    /* Baseline for small screens:  */
+    opacity: 0; /*  invisible for small screens */
+                /* repaced the display: none property */
+    transform: scale(1.2); /* zoom 120% */
+    transition: all .3s ease-out; /* transition of ALL properties, instead of "opacity" only */
+    position: relative;
+    z-index: -10; /* hide it from accidental clicking  */
+    padding-top: 90px;  /* Shift down from logo image */
+    text-align: center;
+
+    @mixin atMedium { /* Nav menue items are visible starting from medium screens*/
+      opacity: 1;   /*  instead of display: block; */
+      transform: scale(1); /* zoom always 100%  */
+      z-index: 1;   /* can click now */
+      padding-top: 0; /* Logo is on the left, no NAV bar shift required */
+    }
+
+    /* site-header__menu-content--is-visible */
+    &--is-visible {  /*  NAV menue content is visible (MobileMenu.js) */
+      opacity: 1; /* replaced the display:block property  */
+      transform: scale(1); /* zoom back to 100% */
+      z-index: 1; /* now can click it */
+    }
+  }
+}
