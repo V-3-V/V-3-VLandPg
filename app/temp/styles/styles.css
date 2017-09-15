@@ -1,0 +1,1371 @@
+/* Import normalize.css npm package */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details, /* 1 */
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+/* Import POSTCSS base of the project*/
+/* mainBlue Color code */
+/* mainOrange Color code */
+/* mainGrey Color code */
+/* Mixins are "reusable bits of code" plug-in */
+/* Mixin to clear floats in .css files */
+/* Global CSS file is using _variables and _mixins */
+/* Global CSS  to trickle down to each element */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Browser will not add padding to the total width of row */
+* {
+  box-sizing: border-box;
+}
+/* Links are orange colored globally  */
+a {
+  color: #d59541;
+}
+/* Import POSTCSS modules of the project*/
+.large-hero { /* POSTCSS will substittute "&" by .large-hero in nested BEM classes */
+  border-bottom: 10px solid #2f5572; /* Add bar line at the bottom */
+  position: relative;
+
+}
+/* nested BEM .large-hero__<classes> */
+.large-hero__image {
+  display: block;/* By default was: inline. Browser believes that image
+                          is something like line of text.
+                          Text line requires empty space underneath for letters
+                          like: 'y', 'g' *//* display: block  means that element aligns perfectly like <div>
+          and no extra space required   */
+}
+.large-hero__text-content {
+  padding-top: 88px;/* give some space to nav bar + logo in _side-header.css
+                (padding-top: 88px)  for smaller than medium screens where Logo is limiting factor*/
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+@media ( min-width: 800px) {
+  .large-hero__text-content {/* padding for padding-top + logo  */
+    padding-top: 60px;
+  }
+}
+/* Example of mobile first pattern */
+.large-hero__title {/* baselne for all screens including super tiny */
+  font-weight: 300;
+  color: #2f5572;
+  margin:0;
+  font-size: 2.4rem;/* Large sceens ~ 1200px */
+}
+/* Small screens ~ 530px */
+@media ( min-width: 530px) {
+  .large-hero__title {
+    font-size: 4.8rem;
+  }
+}
+/* Medium screens ~ 800px */
+@media ( min-width: 800px) {
+  .large-hero__title {
+    font-size: 4.8rem;
+  }
+}
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .large-hero__title {
+    font-size: 4.8rem;
+  }
+}
+.large-hero__subtitle {
+  font-weight: 300;
+  color: #2f5572;
+  margin:0;
+  font-size: 1.5rem;
+}
+/* starting from Small screens ~ 530px, use 2.9rem fontsize */
+@media ( min-width: 530px) {
+  .large-hero__subtitle {
+    font-size: 2.9rem;
+  }
+}
+.large-hero__description {
+  color: #FFF;
+  font-size: 1.1rem;/* for tiny screens */
+  font-weight: 100;
+  font-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* starting from Small screens ~ 530px, use 1.875rem fontsize */
+@media ( min-width: 530px) {
+  .large-hero__description {
+    font-size: 1.875rem;
+  }
+}
+.btn {
+  background-color: #2f5572;
+  color: #FFF;
+  text-decoration:none;
+  padding: .75rem 1.2rem;
+  display:inline-block;
+}
+.btn--orange {
+  background-color: #d59541;
+}
+.btn--large {
+  font-size: 1.0rem;/* Baseline font size */
+  padding: 1.1rem 1.9rem;
+}
+/* starting from Small screens ~ 530px, use 2.9rem fontsize */
+@media ( min-width: 530px) {
+  .btn--large {
+    font-size: 1.25rem;
+  }
+}
+/* Import padding-wrapper file  */
+.wrapper {
+  /* background-color: green; -- for debugging */
+  /* hide extra margine of floats, etc  */
+  overflow: hidden;
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px;  /* 1200px + 36 (box-sizing: border-box; CSS property for every element ) */
+  /* Content Centered by margins left,right : auto */
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper--medium {/*  medium */
+  max-width: 976px;
+}
+.wrapper--narrow {/* narrow  */
+  max-width: 470px;
+}
+/* no padding for small screens */
+.wrapper--no-padding-until-medium {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* restore padding at medium or larger */
+@media ( min-width: 800px) {
+  .wrapper--no-padding-until-medium {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+/* no padding for small and medium screens */
+.wrapper--no-b-padding-until-large {
+  padding-left: 0;
+  padding-right: 0;/* restore padding at large */
+}
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .wrapper--no-b-padding-until-large {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+/* wrapper nested with another wrapper shold not have horizontal padding */
+.wrapper .wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+.wrapper--b-margin {
+  margin-bottom:1rem;
+}
+/* baseline tiny screens */
+@media ( min-width: 530px) {
+  .wrapper--b-margin {
+    margin-bottom: 3.875rem;
+  }
+}
+/* Import page section file */
+/* Pattern of vertical spacing, etc between page sections */
+.page-section {
+  /* Mobile screens support added*/
+  padding: 1.2rem 0;
+}
+/* new baseline for a small screens */
+@media ( min-width: 800px) {
+  .page-section {/* Medium sized screen */
+    padding: 4.5rem 0;/* padding top, bottom:4.5rem left,right: 0 */
+  }
+}
+.page-section--no-b-padding-until-medium {
+  padding-bottom: 0;
+}
+@media ( min-width: 800px) {
+  .page-section--no-b-padding-until-medium {
+    padding-bottom: 4.5rem;
+  }
+}
+.page-section--no-b-padding-until-large {
+  padding-bottom: 0;
+}
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .page-section--no-b-padding-until-large {
+    padding-bottom: 4.5rem;
+  }
+}
+.page-section--blue {
+  background-color: #2f5572;
+  color: #FFF;
+}
+/* .page-section--testimonials */
+.page-section--testimonials {/* base settings for smaller screens */
+  background-color: #e0e6ef;/* nice background color *//* HTML element has CSS class="lazyload",
+      When it is time come  to  load something, NPM package loads it,
+      and  then replaces lazyload class name by lazyloaded name.
+      Following "mixin" CSS rule applies when class="lazyloaded" presents
+    */
+}
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .page-section--testimonials.lazyloaded {
+    background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size: cover;
+  }
+}
+/* Import headline block file */
+/* Headline block */
+.headline {
+  font-size: 1.9rem; /* baseline for tiny screens */
+  font-weight: 300;
+  color: #2f5572;
+}
+@media ( min-width: 530px) {
+  .headline {
+    font-size: 2.875rem;
+  }
+}
+.headline--centered {
+  text-align: center;
+}
+.headline--orange {
+  color: #d59541;
+}
+.headline--small {
+  font-size: 1.2rem;
+}
+/* baseline for tiny screens */
+@media ( min-width: 530px) {
+  .headline--small {
+    font-size: 1.875rem;/* 30px (measured on the design image)
+                        divided by 16px (from the default settings) */
+  }
+}
+.headline--narrow {
+  max-width: 500px;/* narrow headline */
+  margin-left: auto;/* centered by itself,
+                regardless of previous element */
+  margin-right: auto;
+}
+.headline--light {
+  font-weight: 100;
+}
+.headline strong {/* element tag "strong" font weight */
+  font-weight: 400;
+}
+.headline--b-margin-small {
+  margin-bottom: .5em;/* em - relative to the element itself *//* rem - relative to default global settings */
+}
+.headline--b-margin-large {
+  margin-bottom: 1.6em;/* em - relative to the element itself *//* rem - relative to default global settings */
+}
+.headline--no-t-margin {/* remove top margin modifier */
+  margin-top: 0;
+}
+/* Import reusable column pattern file*/
+/* Reusable column layout pattern */
+/* Assuming 12 column vertical grid layout */
+.row {
+
+  /* Begin Equal Height Rules ( Testimonials section, etc) */
+
+}
+/* the has been moved to base/_mixins "clearfix" for reusability sake */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* background-color: yellow; -- for debugging purposes  */
+.row--t-padding {/* Top padding of the row */
+  padding-top: 80px ;/* to compensate margin: -80px  */
+}
+/* --gutters are empty space between columns */
+.row--gutters {
+  margin-right: -65px;/* to get rid of the last column right padding  */
+}
+/*  One of the possible implementations:
+  &::after {
+    content: "";
+    clear:both;
+    display: table;
+  }
+  */
+.row--gutters-large {
+  margin-right: -100px;
+}
+/* better way to clear floats is ::after pseudo selector */
+.row--gutters-small {
+  margin-right: -45px;
+}
+.row--gutters > div {/* add padding to direct childs (<div>) */
+  padding-right: 65px;/* Browser will not add padding to the total width of row *//* In recent years box-sizing: border-box CSS property  *//* It is added into global setting for each element to overwrite
+       browsers defaults ( missing padding in the width calculations )
+       See base/_global.css */
+}
+.row--gutters-large > div {
+  padding-right: 100px;
+}
+.row--gutters-small > div {
+  padding-right: 45px;
+}
+/* for tiny and small size screns, add bottom margin */
+.row__b-margin-until-medium {
+  margin-bottom: 1rem;
+}
+@media ( min-width: 800px) {
+  .row {/* starting medium size screens,
+            reset margin-bottom to 0 *//* use two columns layout on medium or larger screens */
+  }
+  .row__b-margin-until-medium {
+    margin-bottom: 0;
+  }
+  .row__medium-4 {
+    float: left;
+    width: 33.33%;/* 4/12 = 33.33% */
+  }
+  .row__medium-4--larger {
+    width: 37%;/* 4/12 = 33.33% */
+  }
+  .row__medium-6 {
+    float: left;
+    width: 50%;/* 6/12 = 50% */
+  }
+  .row__medium-8 {
+    float: left;
+    width: 66.66%;/* 8/12 = 66.66% */
+  }
+  .row__medium-8--smaller {
+    width: 63%;/* 8/12 = 66.66% */
+  }
+}
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .row {/* starting medium size screens,
+            reset margin-bottom to 0 *//* use two columns layout on medium or larger screens */
+  }
+  .row__b-margin-until-large {
+    margin-bottom: 0;
+  }
+  .row__large-4 {
+    float: left;
+    width: 33.33%;/* 4/12 = 33.33% */
+  }
+  .row__large-4--larger {
+    width: 37%;/* 4/12 = 33.33% */
+  }
+  .row__large-6 {
+    float: left;
+    width: 50%;/* 6/12 = 50% */
+  }
+  .row__large-8 {
+    float: left;
+    width: 66.66%;/* 8/12 = 66.66% */
+  }
+  .row__large-8--smaller {
+    width: 63%;/* 8/12 = 66.66% */
+  }
+}
+/* Modernizr.js  sets up the class="flexbox" for us, when it is supported by client's br.*/
+@media ( min-width: 800px) {
+  .flexbox .row--equal-height-at-medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;/* Using flex box CSS featue */
+  }
+}
+/* Direct descendants <div> ( Columns in this particular case ) */
+.flexbox .row--equal-height-at-medium > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*  Works for 96% of browsers, that support flexbox */
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .flexbox .row--equal-height-at-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;/* Using flex box CSS featue */
+  }
+}
+/* Direct descendants <div> ( Columns in this particular case ) */
+.flexbox .row--equal-height-at-large > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* <div class="clear-me">  MUST come after all the floating siblings */
+/* Main parent <div class="row" will know how tall he is */
+/* Is not recommended because the empty div element created in the HTML
+  NOT the best practice  */
+/* .clear-me {
+    clear: both;
+}
+*/
+/* Generic content container. Temp deviation from BEM */
+/* Generic Styling for paragraphs text and links (<a>) in it  */
+/* Used in the parent(s) of the <p>, etc elements */
+/* background-color: yellow; */
+.generic-content-container p {
+  font-weight: 300;
+  line-height: 1.65;/* no unit measurement required *//* base style does not require font size, usually */
+  margin:0 0 1.8rem 0;
+}
+/* clockwise: top right botom left  */
+@media ( min-width: 530px) {
+  .generic-content-container p {
+    font-size: 1.125rem;
+  }
+}
+.generic-content-container p a {
+  font-weight: 700;
+}
+/* Section title "our features" */
+/* Block section-title Introduced at "our features" section  */
+.section-title {
+  /* color: yellow; */
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-align: center;
+
+}
+@media ( min-width: 530px) {
+  .section-title {
+    font-size: 3.75rem;
+  }
+}
+.section-title strong {
+  font-weight: 500;
+}
+.section-title--blue {
+  color: #2f5572;
+}
+.section-title--less-margin {
+  margin-bottom: 1.3rem;
+  margin-top: 0;
+}
+.section-title__icon {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.6rem;
+}
+@media ( min-width: 530px) {
+  .section-title__icon {
+    position: relative;
+    top: 8px;
+    margin-right: 0.5rem;
+    margin-left: 0;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+}
+/* Section Our features --> feature-item */
+/* Section: Our features, pattern: feature-item */
+.feature-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+@media ( min-width: 530px) {
+  .feature-item {
+    padding-left: 94px;
+  }
+}
+.feature-item__icon {
+  display: block;
+  margin: 0 auto;
+}
+@media ( min-width: 530px) {
+  .feature-item__icon {
+    position: absolute;
+    left: 0;
+  }
+}
+.feature-item__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-top: 0.7em;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+@media ( min-width: 530px) {
+  .feature-item__title {
+    text-align: left;
+    margin-top: 1em;
+    font-size: 1.875rem;
+  }
+}
+/* Section Testimonials  */
+/* Section: testimonial */
+.testimonial {
+  /* color: red; */
+  /* base line style for smaller screens */
+  background-color: rgba(255, 255, 255, 0.8); /* 0.8 * transparent white */
+  padding: 0 18px 1px 18px;
+  margin-bottom: 98px;
+}
+/* lowr bracket reduced down from 1200
+    because of 3 column layout in "_testimonials" section */
+@media ( min-width: 1010px) {
+  .testimonial {/* Some padding to the edges
+      Bottom margin of the last paragraph creates some space in the bottotm,
+      However when container does not have any bottom padding,
+      the space "leaks out of the container".
+      1px bottom padding of the container element something to push up against :-( */
+    margin-bottom: 0;
+    padding: 0 1.8125rem 1px 1.8125rem;
+  }
+}
+/* cointer margin: -80px; */
+.testimonial--last {
+  margin-bottom: 0;
+}
+.testimonial__photo {/* modifier for a div element-container, which surrounds the photo */
+  border-radius: 80px;/* pertruding out by default, and invisible */
+  overflow: hidden;/* whether to clip content or add scrollbars *//* visible - default, hidden - content clipped *//* now set width and hight of <div> same as the picture image */
+  width: 160px;
+  height: 160px;/* Illusion of circle photo trim created, when border-radius is 1/2 of image side *//* centers image inside the div and clip the picture corners ( overflow: hidden ) */
+  margin: 0 auto -80px auto;/* letting know that 80px of photo is out of container, so line UP *//* top half of the photo must violate container border,
+      use position relative */
+  position: relative;
+  top: -80px;/* Photo is up 80px, and out of container */
+  border: 6px solid rgba(255, 255, 255, 0.8);/* border around photo, in fact around the <div> container  */
+}
+.testimonial__title {
+  color: #2f5572;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+.testimonial__subtitle {
+  color: #d59541;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.937rem;
+  margin: 0.25rem 0 1rem 0;
+}
+/* Sprite file  AUTO generated import */
+/* Do not edit modules/_sprite.css directly as it is
+  auto generated from gulp/templates/sprite.css template file */
+/*  Moustashe template engine has been used
+    sprite-8eb89099.svg  - sprite is variable
+    where gulp-svg-sprite keeps automatically
+    generated file name,  three curvy braces
+    prevents special symbols from  escaping -
+    keeps them (forward slash, etc) as it is
+    The variables base, sprite, wight.outer, position.relative.xy, etc
+    are described in https://github.com/jkphl/gulp-svg-sprite
+    documentation: https://github.com/jkphl/svg-sprite#configuration-basics
+*/
+/* Generate list of classes using BEM naming convention */
+.icon {
+      background-image: url('../../assets/images/sprites/sprite-8eb89099.svg');
+    }
+/* custom modernizr.js script set class="no-svg" (SVG is not supported by  client browser)*/
+/* therefore background image should be in PNG format sprite.png */
+.no-svg .icon {
+      background-image: url('../../assets/images/sprites/sprite-8eb89099.png');
+    }
+/* clear-view-escapes icon CSS map in the sprite file */
+.icon--clear-view-escapes {
+    width: 144.4px;
+    height: 61.53px;
+    background-position: 0 0 ;
+  }
+/* comment icon CSS map in the sprite file */
+.icon--comment {
+    width: 66px;
+    height: 66px;
+    background-position: 99.71014492753623% 0 ;
+  }
+/* facebook icon CSS map in the sprite file */
+.icon--facebook {
+    width: 23.23px;
+    height: 44.01px;
+    background-position: 26.424310365536293% 45.92133741323979% ;
+  }
+/* fire icon CSS map in the sprite file */
+.icon--fire {
+    width: 58px;
+    height: 66px;
+    background-position: 0 99.58035714285714% ;
+  }
+/* globe icon CSS map in the sprite file */
+.icon--globe {
+    width: 66px;
+    height: 66px;
+    background-position: 28.019323671497585% 99.58035714285714% ;
+  }
+/* instagram icon CSS map in the sprite file */
+.icon--instagram {
+    width: 44.01px;
+    height: 44.01px;
+    background-position: 63.059522249879905% 49.25740726919919% ;
+  }
+/* mail icon CSS map in the sprite file */
+.icon--mail {
+    width: 66px;
+    height: 50px;
+    background-position: 0 48.0703125% ;
+  }
+/* rain icon CSS map in the sprite file */
+.icon--rain {
+    width: 66px;
+    height: 66px;
+    background-position: 99.71014492753623% 58.92857142857143% ;
+  }
+/* star icon CSS map in the sprite file */
+.icon--star {
+    width: 66px;
+    height: 66px;
+    background-position: 59.90338164251208% 99.58035714285714% ;
+  }
+/* twitter icon CSS map in the sprite file */
+.icon--twitter {
+    width: 53.78px;
+    height: 44.06px;
+    background-position: 94.15199343125627% 98.55159026429745% ;
+  }
+/* wifi icon CSS map in the sprite file */
+.icon--wifi {
+    width: 62px;
+    height: 66px;
+    background-position: 68.43601895734596% 0 ;
+  }
+/* youtube icon CSS map in the sprite file */
+.icon--youtube {
+    width: 36.75px;
+    height: 44px;
+    background-position: 37.76931216931217% 45.917910447761194% ;
+  }
+/* Site footer */
+/* Site footer CSS file */
+.site-footer {
+  background-color: #2f5572;
+  color: #FFF; /* white */
+  padding: .5rem 0;  /* adjust vertical padding */
+  text-align: center;
+  font-weight: 200;
+
+}
+.site-footer__text {
+  display: block;/* line break *//* for small screens buttton is on next line */
+  margin-bottom: 1rem;
+}
+/* at larger than medium sized screens use "design file", side by side */
+@media ( min-width: 800px) {
+  .site-footer__text {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 1.4rem;
+  }
+}
+/* Site header */
+/* Site Header file */
+.site-header {
+  padding:10px 0;  /* padding 10 px from design file */
+  position: absolute; /* take off from normal flow */
+  width: 100%;  /* use all availiable width */
+  z-index: 2; /* (2 > nothing ) put on top of large-herow section */
+  transition: background-color .3s ease-out;
+}
+/* site-header--is-expanded  (MobileMenu.js) */
+.site-header--is-expanded {
+  background-color: rgba(47,85,114, .55 );/* 55% opacity*/
+}
+/* transition for a smaller screens */
+@media ( min-width: 800px) {
+  .site-header {/* Nav bar is for medium and large screens */
+    position: fixed;/* !!! Where postcss plugin postcss-hexrgba will transform #ffffff to rgba() format */
+    background-color: rgba(47,85,114,.3);/* $mainBlue = #2f5572 *//* site-header--dark  CSS class for "fixed header" feature */
+  }
+  .site-header--dark {
+    background-color: rgba(23,51,72,.85);/* darker blue color for fixed header */
+  }
+}
+/* site-header__btn-container */
+@media ( min-width: 800px) {
+  .site-header__btn-container {/* float to right for medium to large screens */
+    float: right;
+  }
+}
+.site-header__logo {
+  position: absolute;
+  top: 0 ;/* compansate for padding in class="site-header" */
+  left: 50%;/* logo to the right half of the screen */
+  -webkit-transform: translateX(-50%) scale(.8);
+          transform: translateX(-50%) scale(.8);/* then move left 50%
+                  of its own width and scale down to 80% */
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;/* Transition animation for shrinking Logo in stiky-header */
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;/* by default, horizontal 50% and vertical 50%
+                  Then we change to 0% vertical origin point, and logo moves up  */
+  background-color: #2f5572;
+  padding: 25px 36px;
+}
+@media ( min-width: 800px) {
+  .site-header__logo {/* position logo for larger screens */
+    left: auto;/* undo left: of the small screens*/
+    -webkit-transform: translateX(0);
+            transform: translateX(0);/* undo transform: for smaller screens*//* Shrink Logo if the sticky header is scrolling dowm .i.e ".site-header--dark" class is present */
+  }
+  .site-header--dark .site-header__logo {
+    -webkit-transform: scale(.56);
+            transform: scale(.56);/* scale reduced to .56 from .57 to accomodate extra padding in the sprite.svg/.png file */
+  }
+}
+.site-header__logo__graphic {
+  text-indent: -9999px;/* hide text without hiding element itself */
+}
+.site-header__menu-icon {/* mobile icon - sandwich */
+  width: 20px;
+  height: 19px;/* background-color: #FFF; // commented out to make it invisible */
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+}
+/* Horiz bar: class= site-header__menu-icon__top ( MobileMenu.js ) */
+.site-header__menu-icon::before {
+  content: "" ;/* to make the pseudo element appear on screen */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #FFF;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;/* rotation point in 50% 50% (middle point) by default */
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+/* site-header__menu-icon__middle ( MobileMenu.js )*/
+.site-header__menu-icon__middle {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #FFF;
+  transition: all .3s ease-out;/* transition all properties, baside opacity */
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;/* reason: middle bar is fading to the left */
+}
+/* site-header__menu-icon__bottom ( MobileMenu.js )*/
+.site-header__menu-icon::after {
+  content: "";/* appear on the sreen */
+  position: absolute;
+  bottom: 0;/* at the very bottom :-) */
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: #FFF;
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+/* Sandwich menue icon Animating Hamburger */
+@media ( min-width: 800px) {
+  .site-header__menu-icon {/* do not show on larger screens */
+    display: none;
+  }
+}
+/* Create  X from the three bars "sandwich menu"  */
+.site-header__menu-icon--close-x::before {
+  -webkit-transform: rotate(45deg) scaleX(1.25);
+          transform: rotate(45deg) scaleX(1.25);
+}
+.site-header__menu-icon--close-x .site-header__menu-icon__middle {
+  opacity: 0;/* still present, but invisible */
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+.site-header__menu-icon--close-x::after {
+  -webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+          transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+.site-header__menu-content {/* Baseline for small screens:  */
+  opacity: 0;/*  invisible for small screens *//* repaced the display: none property */
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);/* zoom 120% */
+  transition: all .3s ease-out;/* transition of ALL properties, instead of "opacity" only */
+  position: relative;
+  z-index: -10;/* hide it from accidental clicking  */
+  padding-top: 90px;/* Shift down from logo image */
+  text-align: center;
+}
+@media ( min-width: 800px) {
+  .site-header__menu-content {/* Nav menue items are visible starting from medium screens*/
+    opacity: 1;/*  instead of display: block; */
+    -webkit-transform: scale(1);
+            transform: scale(1);/* zoom always 100%  */
+    z-index: 1;/* can click now */
+    padding-top: 0;/* Logo is on the left, no NAV bar shift required */
+  }
+}
+/* site-header__menu-content--is-visible */
+.site-header__menu-content--is-visible {/*  NAV menue content is visible (MobileMenu.js) */
+  opacity: 1;/* replaced the display:block property  */
+  -webkit-transform: scale(1);
+          transform: scale(1);/* zoom back to 100% */
+  z-index: 1;/* now can click it */
+}
+/* nav Primary navigation style */
+.primary-nav {
+  /* background-color: #efefef; */
+  padding-top: 10px;
+}
+@media ( min-width: 800px) {
+  .primary-nav {
+    padding-top: 0;
+  }
+}
+@media ( min-width: 800px) {
+  .primary-nav--pull-right {/* right float for medium to large screens*/
+    float: right;
+  }
+}
+/* any <ul> within primary-nav */
+.primary-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.primary-nav ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* any <li> within primary-nav */
+.primary-nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 7px;
+}
+/* to save space on smaller screens */
+@media ( min-width: 800px) {
+  .primary-nav li {
+    padding-right: 20px;/* from the design file */
+    float: left;
+    display: block;
+  }
+}
+/* Save 7 to 20 px horizontal on smaller screens */
+.primary-nav li:last-child {
+  padding-right: 0;
+}
+@media ( min-width: 800px) {
+  .primary-nav li:last-child {
+    padding-right: 20px;
+  }
+}
+/* any <a> within primary-nav */
+.primary-nav a {
+  color: #FFF;
+  font-weight: 300;
+  text-decoration: none;
+  display:block;/* each a-elem is a block (padding, margine, etc are applicable)  */
+  padding: 5px 8px;/* center vertically in the blue line  */
+  font-size: .8rem;
+  background-color: rgba(47,85,114, .5);
+}
+@media ( min-width: 800px) {
+  .primary-nav a {
+    font-size: 1rem;
+    padding: 12px 0;/* center vertically in the blue line  */
+    background-color: transtparent;
+  }
+  .primary-nav a.is-current-link {
+    color: #fabb69;/* nice Orange color*/
+  }
+}
+/* Reveal item new class="reveal-item" */
+/* module/_reveal-item */
+.reveal-item {
+  opacity: 0; /* completely  invisible */
+  transition: all 1.5s ease-out;
+  /* Fine tune a liitle */
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+.reveal-item--is-visible {
+  opacity: 1;/* fully visible */
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/* Create Overlay, or Modal, or light box */
+/* Modal, aka Overlay, aka Light box */
+.modal {
+  position: fixed;
+  z-index: 5; /* the highest z-index is on top. */
+  background-color: rgba(255, 255, 255, .94); /* white color #FFF */
+  /* occupy whole window  top,bott, etc = 0 */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;   /* make the overlay transparent */
+  visibility: hidden; /* make the overlay non - clickable */
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
+
+}
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.modal__inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.modal__description {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.65;
+}
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;/* horizontal  vertical */
+  color: #2f5572;
+  cursor: pointer;
+}
+.modal__close:hover {
+  color: #d59541;
+}
+/* Social Icons */
+/* Social Icons */
+.social-icons {
+   text-align: center;
+}
+.social-icons__icon {/* new rule targets social-icons__icon element */
+  background-color: #d59541;
+  display: inline-block;
+  margin: 0 5px 5px 5px;/* up right bottom left */
+  width: 72px;
+  height: 72px;
+  position: relative;
+}
+/* Parents must be relative for absolute chilt */
+@media ( min-width: 530px) {
+  .social-icons__icon {
+    width: 72px;
+    margin: 0 5px;/* vertical horizontal */
+  }
+}
+.social-icons__icon .icon {/* block property helps icon image occupy space */
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);/* pull back left half of the width , pull back up half of the height  */
+}

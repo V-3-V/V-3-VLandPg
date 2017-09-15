@@ -14,10 +14,9 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),  // CSS
     uglify = require('gulp-uglify'),  // JS
     // solely for preview task 'previewDist' of ./docs folder
-    browserSync = require('browser-sync').create(); // Only create() method from the package.
+    browserSync = require('browser-sync').create(); //  create() method from the package.
 
 // browser preview task of the ./docs folder
-// ( borrowed from "watch.js" task )
 gulp.task('previewDist', function() {
   // browserSync spins up a little server baseDir = ./dist
   browserSync.init({

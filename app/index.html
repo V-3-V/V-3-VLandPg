@@ -5,23 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Create webApp&#33;</title>
+  <title>Creative webApp</title>
   <meta name="keywords" content="Information How to, information software installation, information scripts, pet projects information">
-  <meta name="description" content="Pet projects. Chat web app. Full stack development.">
+  <meta name="description" content="Side projects. Chat web app. Full stack development.">
+
   <!-- build:css assets/styles/styles.css -->
   <link href='temp/styles/styles.css' rel="stylesheet" type="text/css">
   <!-- endbuild -->
   <!-- build:js assets/scripts/Vendor.js -->
-  <script src="temp/scripts/Vendor.js"></script>
+  <script src="/temp/scripts/Vendor.js"></script>
   <!-- endbuild-->
 </head>
 <body>
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <div class="site-header__logo__graphic icon icon--clear-view-escapes">Clear View Escapes</div>
+        <div class="site-header__logo__graphic icon"></div>
       </div>
-      <!-- Add Mobile menu ( sandwich ) -->
+      <!--  Mobile menu  aka sandwich -->
       <div class="site-header__menu-icon">
           <div class="site-header__menu-icon__middle"></div>
       </div>
@@ -31,41 +32,143 @@
           <a href="#" class="btn open-modal">Get in Touch</a>
         </div>
         <nav class="primary-nav primary-nav--pull-right">
-          <!-- New style block for navigation Is's OK with BEM -->
-          <!-- Exception from BEM approach -->
           <ul>
-            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
-            <li><a href="#features" id="features-link">Features</a></li>
-            <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
+            <li><a href="#beginning" id="beginning-link">Beginning</a></li>
+            <li><a href="#articles" id="articles-link">Articles</a></li>
+            <li><a href="#webapps" id="webapps-link">WebApps</a></li>
           </ul>
         </nav>
       </div> <!-- site-header__menu-content -->
     </div> <!-- wrapper -->
   </header>
 
-  <header id="showcase">
-    <h1>Projects</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi officiis ipsum officia numquam expedita ullam.</p>
-    <a href="#" class="button">Read More</a>
-  </header>
+
+  <div class="large-hero">
+    <!-- Picture element used for for selection of screen size-cropped image -->
+    <picture>
+      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <!-- base image for most tiny screeens-->
+      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Blue sky, white clouds" class="large-hero__image">
+    </picture>
+    <div class="large-hero__text-content">
+      <div class="wrapper"> <!-- Padding Wrapper around text content -->
+          <h1 class="large-hero__title">Your website.</h1>
+          <h2 class="large-hero__subtitle">Can be so beautiful, only you can imagine...</h2>
+          <p class="large-hero__description">Say hello to personalized online  presence.</p>
+          <p><a href="#" class="btn btn--orange btn--large open-modal">Get Started Today</a></p>
+      </div> <!--  wrapper -->
+    </div>  <!-- large-hero__text-content -->
+  </div> <!-- large-hero   -->
 
   <!--  two horizontal sections and one vertical with three boxes inside -->
-  <section id="section-a">
+  <div id="beginning" class="page-section" data-matching-link="#beginning-link">
+    <div class="wrapper">
+      <section>
+        <h3>Beginning</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.</p>
+      </section>
+  </div>
+</div>
+
+<div id="articles" class="page-section" data-matching-link="#articles-link">
+  <div class="wrapper">
+    <section>
+    <h3>Articles</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.</p>
   </section>
-  <section id="section-b">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus impedit maxime, quae soluta quis cumque perferendis! Doloribus quaerat, placeat iste facere, aspernatur ex cum veritatis laudantium, officia, non porro exercitationem incidunt quis dolore? Officia ex accusamus expedita optio, voluptatem minus? In maiores omnis aperiam earum ab molestiae beatae laborum blanditiis incidunt, delectus dolor, id voluptates optio aspernatur aliquam saepe atque labore? Tempore reprehenderit ab ipsam perspiciatis ut, provident perferendis sapiente in numquam blanditiis, enim, illo error nulla incidunt quos quidem ratione repellat ipsa molestias veritatis? Mollitia, fugit dolore commodi porro repudiandae atque, eos, ipsum quam culpa fuga deleniti quae.</p>
-  </section>
-  <section id="section-c">
-    <div class="box-1">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+</div>
+</div>
+
+  <!-- moderizr checks for a "flexbox" support of browser, if not  then fallback to float -->
+  <div id="webapps" class="page-section page-section--no-b-padding-until-large" data-matching-link="#webapps-link">
+    <div class="wrapper wrapper--no-padding-until-large">
+      <h2 class="section-title section-title--blue">
+        <span class="icon icon--comment section-title__icon"></span>Demo <strong>Web Apps</strong>
+      </h2>
+
+      <!-- Three-Column layout  -->
+      <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
+        <div class="row__large-4"> <!-- 3 columns row  12/4 = 3  -->
+          <div class="webapp">
+            <!-- Start styling from top to bottom. Round photo first in separate div-->
+            <div class="webapp__photo">
+              <img src="assets/images/chat_bubbles.jpg" alt="Chat App Demo">
+            </div> <!--class="webapp__photo" -->
+            <h3 class="webapp__title">Demo Chat App</h3>
+            <h4 class="webapp__subtitle"></h4>
+            <p>&ldquo;Demo chat application.&rdquo;</p>
+            <!-- https://stackoverflow.com/questions/6303964/javascript-open-a-given-url-in-a-new-tab-by-clicking-a-button -->
+            <!-- https://polar-depths-68329.herokuapp.com/chat.html?name=ss&room=aa -->
+              <form action="https://polar-depths-68329.herokuapp.com/chat.html" method="get" target="_blank">
+                          Name:<br>
+                          <input name="name" type="text"/>
+                          <br>
+                          Chat Room Name:<br>
+                          <input name="room" type="text" />
+                          <br><br>
+                          <input type="submit" value="Join Chat Room" class="btn btn--orange btn--large" />
+              </form>
+          </div> <!-- class="webapp" -->
+        </div> <!-- row__large-4 -->
+
+        <div class="row__large-4"> <!-- 3 columns row  12/4 = 3  -->
+          <div class="webapp">
+            <!-- Start styling from top to bottom. Round photo first in separate div-->
+            <div class="webapp__photo">
+              <img src="assets/images/UnderConstructionSlug.jpg" alt="Data Science Demo">
+            </div> <!--class="webapp__photo" -->
+            <h3 class="webapp__title">Data science Demo</h3>
+            <h4 class="webapp__subtitle"></h4>
+            <p>&ldquo;Demo data science app. Under construction.&rdquo;</p>
+          </div> <!-- class="webapp" -->
+        </div> <!-- row__large-4 -->
+
+        <div class="row__large-4"> <!-- 3 columns row  12/4 = 3  -->
+          <div class="webapp">
+            <!-- Start styling from top to bottom. Round photo first in separate div-->
+            <div class="webapp__photo">
+              <img src="assets/images/UnderConstructionSlug.jpg" alt="Game Demo">
+            </div> <!--class="webapp__photo" -->
+            <h3 class="webapp__title">Game Demo</h3>
+            <h4 class="webapp__subtitle"></h4>
+            <p>&ldquo;Game demo. Under construction.&rdquo;</p>
+          </div> <!-- class="webapp" -->
+        </div> <!-- row__large-4 -->
+
+    </div>   <!-- End of Three-Column layout row -->
+
+  </div>
+</div>  <!-- Web Apps section  -->
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <p><span class="site-footer__text">Vlad Vladimirov &copy; 2017</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+  </div> <!-- class wrapper -->
+</footer>
+
+<div class="modal">
+  <div class="modal__inner">
+    <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span>Get in <strong>Touch</strong></h2>
+    <div class="wrapper wrapper--narrow">
+      <p class="modal__description">Contact information</p>
     </div>
-    <div class="box-2">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
+    <div class="social-icons">
+      <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
+      <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
+      <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
+      <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
     </div>
-    <div class="box-3">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolorum est, molestias dolores quis sunt nobis temporibus veritatis libero odio!
-    </div>
-  </section>
+  </div> <!-- Modal Inner -->
+  <div class="modal__close">X</div>
+</div>
+
+
+<!-- Main application JS file -->
+<!-- build:js assets/scripts/App.js -->
+<script src="/temp/scripts/App.js"></script>
+<!-- endbuild -->
+
 </body>
 </html>
