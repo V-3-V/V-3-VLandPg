@@ -1,3 +1,15 @@
+/*
+    COLORS
+*/
 $mainBlue: #2f5572;   /* mainBlue Color code */
 $mainOrange: #d59541; /* mainOrange Color code */
-$mainGrey: #333;  /* mainGrey Color code */        
+$mainGrey: #333;  /* mainGrey Color code */
+
+/*
+  CSS class="accordion"
+*/
+$accordionWhite: #FFF;
+$accordionGrey: #333;
+$accordionRed: #800000;  /* maroon */
+$accordionBlack: #30455c;
+$accordionSans: 'Titillium Web', sans-serif;

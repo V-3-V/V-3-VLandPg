@@ -366,9 +366,16 @@ template {
   display: none;
 }
 /* Import POSTCSS base of the project*/
+/*
+    COLORS
+*/
 /* mainBlue Color code */
 /* mainOrange Color code */
 /* mainGrey Color code */
+/*
+  CSS class="accordion"
+*/
+/* maroon */
 /* Mixins are "reusable bits of code" plug-in */
 /* Mixin to clear floats in .css files */
 /* Global CSS file is using _variables and _mixins */
@@ -851,91 +858,6 @@ a {
     display: inline-block;
   }
 }
-/* Section Our features --> feature-item */
-/* Section: Our features, pattern: feature-item */
-.feature-item {
-  position: relative;
-  padding-bottom: 2.5rem;
-}
-@media ( min-width: 530px) {
-  .feature-item {
-    padding-left: 94px;
-  }
-}
-.feature-item__icon {
-  display: block;
-  margin: 0 auto;
-}
-@media ( min-width: 530px) {
-  .feature-item__icon {
-    position: absolute;
-    left: 0;
-  }
-}
-.feature-item__title {
-  font-size: 1.6rem;
-  font-weight: 300;
-  margin-top: 0.7em;
-  margin-bottom: 0.8rem;
-  text-align: center;
-}
-@media ( min-width: 530px) {
-  .feature-item__title {
-    text-align: left;
-    margin-top: 1em;
-    font-size: 1.875rem;
-  }
-}
-/* Section Testimonials  */
-/* Section: testimonial */
-.testimonial {
-  /* color: red; */
-  /* base line style for smaller screens */
-  background-color: rgba(255, 255, 255, 0.8); /* 0.8 * transparent white */
-  padding: 0 18px 1px 18px;
-  margin-bottom: 98px;
-}
-/* lowr bracket reduced down from 1200
-    because of 3 column layout in "_testimonials" section */
-@media ( min-width: 1010px) {
-  .testimonial {/* Some padding to the edges
-      Bottom margin of the last paragraph creates some space in the bottotm,
-      However when container does not have any bottom padding,
-      the space "leaks out of the container".
-      1px bottom padding of the container element something to push up against :-( */
-    margin-bottom: 0;
-    padding: 0 1.8125rem 1px 1.8125rem;
-  }
-}
-/* cointer margin: -80px; */
-.testimonial--last {
-  margin-bottom: 0;
-}
-.testimonial__photo {/* modifier for a div element-container, which surrounds the photo */
-  border-radius: 80px;/* pertruding out by default, and invisible */
-  overflow: hidden;/* whether to clip content or add scrollbars *//* visible - default, hidden - content clipped *//* now set width and hight of <div> same as the picture image */
-  width: 160px;
-  height: 160px;/* Illusion of circle photo trim created, when border-radius is 1/2 of image side *//* centers image inside the div and clip the picture corners ( overflow: hidden ) */
-  margin: 0 auto -80px auto;/* letting know that 80px of photo is out of container, so line UP *//* top half of the photo must violate container border,
-      use position relative */
-  position: relative;
-  top: -80px;/* Photo is up 80px, and out of container */
-  border: 6px solid rgba(255, 255, 255, 0.8);/* border around photo, in fact around the <div> container  */
-}
-.testimonial__title {
-  color: #2f5572;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin: 0;
-}
-.testimonial__subtitle {
-  color: #d59541;
-  text-align: center;
-  font-weight: 400;
-  font-size: 0.937rem;
-  margin: 0.25rem 0 1rem 0;
-}
 /* Sprite file  AUTO generated import */
 /* Do not edit modules/_sprite.css directly as it is
   auto generated from gulp/templates/sprite.css template file */
@@ -1368,4 +1290,236 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);/* pull back left half of the width , pull back up half of the height  */
+}
+/* Accordion elements*/
+.accordion {
+
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 900;
+            perspective: 900;
+    overflow-y: scroll;
+    background-color: #333;
+    font-family: 'Titillium Web', sans-serif;
+    color: #30455c;
+
+    min-height: 0;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 90px 0;
+    -webkit-transform: translate( -50% , 0 );
+            transform: translate( -50% , 0 );
+    box-shadow: 0 10px 0 0 #800000 inset;
+    background-color: #FFF;
+    max-width: 450px;
+    padding: 30px; /* ul */
+
+
+      @-webkit-keyframes flipdown {
+        0% {
+          opacity: 0;
+          -webkit-transform-origin: top center;
+                  transform-origin: top center;
+          -webkit-transform: rotateX(-90deg);
+                  transform: rotateX(-90deg);
+        }
+        5% {
+          opacity: 1;
+        }
+        80% {
+          -webkit-transform: rotateX(8deg);
+                  transform: rotateX(8deg);
+        }
+        83% {
+          -webkit-transform: rotateX(6deg);
+                  transform: rotateX(6deg);
+        }
+        92% {
+          -webkit-transform: rotateX(-3deg);
+                  transform: rotateX(-3deg);
+        }
+        100% {
+          -webkit-transform-origin: top center;
+                  transform-origin: top center;
+          -webkit-transform: rotateX(0deg);
+                  transform: rotateX(0deg);
+        }
+      }
+
+
+      @keyframes flipdown {
+        0% {
+          opacity: 0;
+          -webkit-transform-origin: top center;
+                  transform-origin: top center;
+          -webkit-transform: rotateX(-90deg);
+                  transform: rotateX(-90deg);
+        }
+        5% {
+          opacity: 1;
+        }
+        80% {
+          -webkit-transform: rotateX(8deg);
+                  transform: rotateX(8deg);
+        }
+        83% {
+          -webkit-transform: rotateX(6deg);
+                  transform: rotateX(6deg);
+        }
+        92% {
+          -webkit-transform: rotateX(-3deg);
+                  transform: rotateX(-3deg);
+        }
+        100% {
+          -webkit-transform-origin: top center;
+                  transform-origin: top center;
+          -webkit-transform: rotateX(0deg);
+                  transform: rotateX(0deg);
+        }
+      }
+}
+@media ( min-width: 530px) {
+  .accordion {
+    box-sizing: border-box;
+    -webkit-transform: translate( 0 , 0 );
+            transform: translate( 0 , 0 );
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+/*
+Accordion  CSS
+
+*/
+.accordion .transition {
+  transition: all 0.25s ease-in-out;
+}
+.accordion .flipIn {
+  -webkit-animation: flipdown 0.5s ease both;
+          animation: flipdown 0.5s ease both;
+}
+.accordion .no-select {
+  -webkit-tap-highlight-color: #000000;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.accordion h4, .accordion h5 {
+  color: #800000;
+}
+.accordion h4 {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  @extend .flipIn ;
+}
+.accordion h5 {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  background-color: #FFF;
+  margin: 0;
+  cursor: pointer;
+  @extend .no-select;
+}
+.accordion div {
+  color: #30455c;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  @extend .transition;
+  opacity: 1;
+  -webkit-transform: translate( 0 , 0 );
+          transform: translate( 0 , 0 );
+  margin-top: 14px;
+  z-index: 2;
+}
+.accordion ul {
+  list-style: none;
+  -webkit-perspective: 900;
+          perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accordion ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #333;
+  @extend .flipIn;
+}
+.accordion ul li:nth-of-type(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.accordion ul li:nth-of-type(2) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+.accordion ul li:nth-of-type(3) {
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
+}
+.accordion ul li:last-of-type {
+  padding-bottom: 0;
+}
+.accordion ul i {
+  position: absolute;
+  -webkit-transform: translate( -6px , 0 );
+          transform: translate( -6px , 0 );
+  margin-top: 16px;
+  right: 0;
+}
+.accordion ul i:before, .accordion ul i:after {
+  content: "";
+  @extend .transition;
+  position: absolute;
+  background-color: #800000;
+  width: 3px;
+  height: 9px;
+}
+.accordion ul i:before {
+  -webkit-transform: translate( -2px , 0 ) rotate( 45deg );
+          transform: translate( -2px , 0 ) rotate( 45deg );
+}
+.accordion ul i:after {
+  -webkit-transform: translate( 2px , 0 ) rotate( -45deg );
+          transform: translate( 2px , 0 ) rotate( -45deg );
+}
+.accordion ul input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accordion ul input[type=checkbox]:checked~div {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transform: translate( 0 , 50% );
+          transform: translate( 0 , 50% );
+}
+.accordion ul input[type=checkbox]:checked~i:before {
+  -webkit-transform: translate( 2px , 0 ) rotate( 45deg );
+          transform: translate( 2px , 0 ) rotate( 45deg );
+}
+.accordion ul input[type=checkbox]:checked~i:after {
+  -webkit-transform: translate( -2px , 0 ) rotate( -45deg );
+          transform: translate( -2px , 0 ) rotate( -45deg );
 }

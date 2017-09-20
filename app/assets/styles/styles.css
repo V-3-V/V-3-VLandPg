@@ -20,10 +20,6 @@
 @import "modules/_generic-content-container";
 /* Section title "our features" */
 @import "modules/_section-title";
-/* Section Our features --> feature-item */
-@import "modules/_feature-item";
-/* Section Testimonials  */
-@import "modules/_testimonial";
 /* Sprite file  AUTO generated import */
 @import "modules/_sprite";
 /* Site footer */
@@ -38,3 +34,5 @@
 @import "modules/_modal";
 /* Social Icons */
 @import "modules/_social-icons";
+/* Accordion elements*/
+@import "modules/_accordion";
