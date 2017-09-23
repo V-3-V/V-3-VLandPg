@@ -49,9 +49,9 @@
   <div class="large-hero">
     <!-- Picture element used for for selection of screen size-cropped image -->
     <picture>
-      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
-      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
-      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 4000w" media="(min-width: 1600px)">
+      <source srcset="assets/images/hero--medium.jpg 1280w, assets/images/hero--medium-hi-dpi.jpg 3820w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero--small.jpg 640w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
       <!-- base image for most tiny screeens-->
       <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Blue sky, white clouds" class="large-hero__image">
     </picture>
@@ -70,9 +70,10 @@
     <div class="wrapper">
       <h2 class="headline headline--centered headline--light headline--b-margin-small">Beginning</h2>
       <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Design, build,  deploy web site. </h3>
-      <div class="wrapper wrapper--large wrapper--b-margin">
-        <!--    -->
-          <div class="accordion">
+      <!-- <div class="wrapper wrapper--large wrapper--b-margin"> -->
+        <!-- Accordion module  _accordion -->
+      <div class="wrapper accordion">
+            <div class="accordion--body">
             <ul>
                  <li>  <input type="checkbox" checked class="lev1">
                      <i></i>
@@ -81,8 +82,8 @@
                       <ul>
                           <li>  <input type="checkbox" checked class="lev2">
                             <i></i>
-                              <h5>Select Polygraphics</h5>
-                                  <div><p>Fonts, sizes,  spacing,  lines</p></div>
+                              <h5>Select Typography</h5>
+                                  <div><p>Fonts <a href="https://fonts.google.com/about" target="_blank">Google Free Fonts</a>, sizes,  spacing,  lines</p></div>
                           </li>
                           <li> <input type="checkbox" checked class="lev2">
                             <i></i>
@@ -140,9 +141,9 @@
                     <h5>Choose DNS service provider</h5>
                         <div><p>Godaddy, and others.</p></div>
                   </li>
+                  <li></li>
                 </ul>
                 </div>
-
              </ul>  <!--  Beginnig ul   -->
           </div> <!-- class="accordion" -->
      </div>      <!-- Wrapper wrapper--medium wrapper--b-margin -->
@@ -151,20 +152,34 @@
 
  <div id="articles" class="page-section" data-matching-link="#articles-link">
   <div class="wrapper">
-    <h2 class="headline headline--centered headline--light headline--b-margin-small">Tutorials</h2>
+    <h2 class="headline headline--centered headline--light headline--b-margin-small">Articles</h2>
     <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Software configuration.</h3>
-    <div class="wrapper wrapper--medium wrapper--b-margin">
-      <ul>
-        <li><h4>Build workflow</h4>
-            <p>Node, gulp, babel, webpack</p>
-        </li>
-        <li><h5>GitHub</h5>
-            <p>GitHub Pages, static site generator Jekyll </p>
-        </li>
-      </ul>
-  </div>
-</div>
-</div>
+
+    <!-- <div class="wrapper wrapper--medium wrapper--b-margin"> -->
+    <div class="wrapper accordion">
+          <div class="accordion--body">
+            <ul>
+                <li>  <input type="checkbox" checked class="lev1">
+                        <i></i>
+                        <h4>Build workflow</h4>
+                       <div>
+                              <p>Node, gulp, babel, webpack</p>
+                        </div>
+                </li>
+                  <li> <input type="checkbox" checked class="lev1">
+                        <i></i>
+                        <h4>GitHub</h4>
+                        <div>
+                              <p>GitHub Pages, static site generator Jekyll </p>
+                        </div>
+                </li>
+          </ul>
+
+      </div>   <!-- accordion--body  -->
+      </div>  <!-- wrapper accordion -->
+
+    </div>   <!-- div id="articles"  -->
+  </div>   <!-- div class="wrapper"  -->
 
   <!-- moderizr checks for a "flexbox" support of browser, if not  then fallback to float -->
   <div id="webapps" class="page-section page-section--no-b-padding-until-large" data-matching-link="#webapps-link">
@@ -172,7 +187,6 @@
       <h2 class="section-title section-title--blue">
         <span class="icon icon--comment section-title__icon"></span>Demo <strong>Web Apps</strong>
       </h2>
-
       <!-- Three-Column layout  -->
       <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
         <div class="row__large-4"> <!-- 3 columns row  12/4 = 3  -->
@@ -227,7 +241,7 @@
 
 <footer class="site-footer">
   <div class="wrapper">
-    <p><span class="site-footer__text">Vlad Vladimirov. license in file: 2017.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+    <p><span class="site-footer__text">Vlad Vladimirov. 2017.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
   </div> <!-- class wrapper -->
 </footer>
 

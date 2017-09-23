@@ -8,6 +8,9 @@ See Discussion  regarding nested accordeons at:  https://stackoverflow.com/quest
 <!--  CSS selectors :  Combinators-->
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Combinators
 
+<!-- CSS Centering Percentage Width/Height Elements -->
+https://css-tricks.com/centering-percentage-widthheight-elements/
+
 <!-- HTML Adaptive Images :  img , viewport , etc -->
 https://html.spec.whatwg.org/multipage/images.html#adaptive-images
 
