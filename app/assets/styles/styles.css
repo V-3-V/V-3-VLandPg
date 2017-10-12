@@ -16,7 +16,7 @@
 @import "modules/_headline";
 /* Import reusable column pattern file*/
 @import "modules/_row";
-/* Generic content container. Temp deviation from BEM */
+/* Generic content container, temporary deviation from BEM */
 @import "modules/_generic-content-container";
 /* Section title "our features" */
 @import "modules/_section-title";

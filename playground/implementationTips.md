@@ -34,3 +34,18 @@ The most direct way to make this happen is in your terminal. Once Sass is instal
                               sass input.scss output.css
  from your terminal. You can watch either individual files or entire directories. In addition, you can watch folders or directories with the --watch flag. An example of running Sass while watching an entire directory is the following:
 sass --watch app/sass:public/stylesheets
+
+======================================================================
+Full Screen Backgound Video tutorial
+ http://thenewcode.com/500/Use-YouTube-Videos-as-Fullscreen-Web-Page-Backgrounds
+Creation video footage  for backgrounds:
+http://thenewcode.com/903/Preflight-Your-Video-For-Delivery-in-HTML5
+Make the video Responsive:
+http://thenewcode.com/649/Responsive-Design-Create-Fluid-YouTube-and-Vimeo-Content
+Tools for Video convertion.
+1. It looks like hacked:  Open source Video Converter:  http://mirovideoconverter.com/
+(Failed in parallel with backup tough )Installation , using  Chocolatey.org:  https://chocolatey.org/packages/mvc
+List of Other video conversion options:  http://thenewcode.com/458/Format-Conversion-Tools-For-HTML5-Audio-and-Video
+2.  Handbrake - open source video transcoder:  https://handbrake.fr/
+
+ ======================================================================
