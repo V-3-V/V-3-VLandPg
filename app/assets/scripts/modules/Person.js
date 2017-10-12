@@ -2,6 +2,7 @@
 //  For webpack assembly.
 //  DEMO of  ES6 to engage Babel-webpack-loader
 //
+
 class Person {
   constructor( fullName, favColor) {
     this.name = fullName;
@@ -15,4 +16,15 @@ class Person {
   }
 }
 
-export default Person;
+// ES6 subclass definition
+class Adult extends Person {
+  constructor( ...rest ) {
+     super( ...rest );
+  }
+   payTaxes() {
+     var taxAmount = `${this.name} now ows $0.00 in taxes. `;
+     return taxAmount;
+   }
+}
+
+export {Person, Adult};

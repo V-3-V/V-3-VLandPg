@@ -1,10 +1,10 @@
-// Build task to create minimized set of files  ready
-//  for go alive in dist folder
-//  Attention!!!
+// Build task to create minimized set of files
+// ready for go alive in docs folder
+/////////////////////////////////
 //  "gulp" tasks 'styles','scripts', 'icons'
 //  are defined in the corresponding files of folder ./gulp/tasks
+//  gulp previewDocs   should run from command line
 //
-
 var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     del = require('del'),
@@ -16,17 +16,17 @@ var gulp = require('gulp'),
     // solely for preview task 'previewDist' of ./docs folder
     browserSync = require('browser-sync').create(); //  create() method from the package.
 
-// browser preview task of the ./docs folder
-gulp.task('previewDist', function() {
+// browser preview task of the build from ./docs folder
+gulp.task('previewDocs', function() {
   // browserSync spins up a little server baseDir = ./dist
   browserSync.init({
     notify: false,
     server: {
       baseDir: "docs"
     }
-  });  // EOF browserSync
+  });  //  browserSync
 
-}); // EOF previewDist
+}); //  previewDist
 
 // Miscellenius functions - tasks
 
@@ -62,7 +62,7 @@ gulp.task('optimizeImages',['deleteDistFolder'], function() {
 });
 
 //
-// Brand new task to streamline the build process
+// Internal task to streamline the build process
 //
 
 gulp.task('useminTrigger', ['deleteDistFolder'], function() {
@@ -71,7 +71,7 @@ gulp.task('useminTrigger', ['deleteDistFolder'], function() {
 
 // gulp-usemin npm package is looking for special comments
 // in index.html file :-)
-
+//
 gulp.task('usemin',['styles','scripts'], function() {
   return gulp.src("./app/index.html")
       .pipe(usemin( { // Next step: tells usemin to revision and compress files

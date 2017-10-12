@@ -29,7 +29,6 @@
     "lazysizes": "^3.0.0",
     "normalize.css": "^5.0.0",
     "picturefill": "^3.0.2",
-    "uuid": "^3.0.1",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
@@ -56,6 +55,7 @@
     "postcss-mixins": "^5.4.1",
     "postcss-nested": "^1.0.0",
     "postcss-simple-vars": "^3.0.0",
+    "uuid": "^3.0.1",
     "webpack": "^2.2.1"
   }
 }

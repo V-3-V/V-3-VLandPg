@@ -1,5 +1,5 @@
 // Webpack configuration
-//  for gulp webpack plugin.
+//  used by   gulp webpack plugin.
 var path = require('path');  // standard module to get Absolute path, etc.
 
 // The webpack.config.js module returns
