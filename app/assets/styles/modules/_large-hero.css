@@ -1,4 +1,4 @@
-.large-hero { /* POSTCSS will substittute "&" by .large-hero in nested BEM classes */
+.large-hero {             /* POSTCSS  substittutes "&" by .large-hero in nested BEM classes */
   border-bottom: 10px solid $mainBlue; /* Add bar line at the bottom */
   position: relative;
   /* nested BEM .large-hero__<classes> */
@@ -12,7 +12,7 @@
   }
 
   &__text-content {
-    padding-top: 88px; /* give some space to nav bar + logo in _side-header.css
+    padding-top: 88px; /* give some space to nav bar + logo in _site-header.css
                 (padding-top: 88px)  for smaller than medium screens where Logo is limiting factor*/
     position: absolute;
     top: 50%;
@@ -61,7 +61,7 @@
   &__description {
     color: #FFF;
     font-size: 1.1rem; /* for tiny screens */
-    font-weight: 100;
+    font-weight: 200;
     font-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
     max-width: 30rem;
     margin-left: auto;

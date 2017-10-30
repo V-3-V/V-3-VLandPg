@@ -23,7 +23,7 @@
 
 /* Mixin to clear floats in .css files */
 @define-mixin clearfix {
-  &::after {
+  &::after {  /* adds  empty element  */
     content: "";
     clear:both;
     display: table;

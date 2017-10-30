@@ -2,7 +2,7 @@
   auto generated from gulp/templates/sprite.css template file */
 
 /*  Moustashe template engine has been used
-    sprite-8eb89099.svg  - sprite is variable
+    sprite-4c8e2571.svg  - sprite is variable
     where gulp-svg-sprite keeps automatically
     generated file name,  three curvy braces
     prevents special symbols from  escaping -
@@ -14,82 +14,160 @@
 
 /* Generate list of classes using BEM naming convention */
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-8eb89099.svg');
+      background-image: url('../../assets/images/sprites/sprite-4c8e2571.svg');
     }
     /* custom modernizr.js script set class="no-svg" (SVG is not supported by  client browser)*/
     /* therefore background image should be in PNG format sprite.png */
     .no-svg .icon {
-      background-image: url('../../assets/images/sprites/sprite-8eb89099.png');
+      background-image: url('../../assets/images/sprites/sprite-4c8e2571.png');
     }
-  /* clear-view-escapes icon CSS map in the sprite file */
-  .icon--clear-view-escapes {
-    width: 144.4px;
-    height: 61.53px;
+  /* add-button-inside-black-circle icon CSS map in the sprite file */
+  .icon--add-button-inside-black-circle {
+    width: 514px;
+    height: 514px;
+    background-position: 25% 0 ;
+  }
+  /* add-plus-button icon CSS map in the sprite file */
+  .icon--add-plus-button {
+    width: 514px;
+    height: 514px;
+    background-position: 0 75% ;
+  }
+  /* black-bubble-speech icon CSS map in the sprite file */
+  .icon--black-bubble-speech {
+    width: 514px;
+    height: 514px;
+    background-position: 0 25% ;
+  }
+  /* chat-bubbles icon CSS map in the sprite file */
+  .icon--chat-bubbles {
+    width: 514px;
+    height: 514px;
+    background-position: 25% 25% ;
+  }
+  /* check-box icon CSS map in the sprite file */
+  .icon--check-box {
+    width: 514px;
+    height: 514px;
+    background-position: 50% 0 ;
+  }
+  /* earth-grid-select-language-button icon CSS map in the sprite file */
+  .icon--earth-grid-select-language-button {
+    width: 514px;
+    height: 514px;
+    background-position: 50% 25% ;
+  }
+  /* folder-symbol icon CSS map in the sprite file */
+  .icon--folder-symbol {
+    width: 514px;
+    height: 514px;
+    background-position: 0 50% ;
+  }
+  /* forward-arrow icon CSS map in the sprite file */
+  .icon--forward-arrow {
+    width: 514px;
+    height: 514px;
+    background-position: 25% 50% ;
+  }
+  /* gmail-logo icon CSS map in the sprite file */
+  .icon--gmail-logo {
+    width: 514px;
+    height: 514px;
+    background-position: 50% 50% ;
+  }
+  /* google-plus-logo-on-black-background icon CSS map in the sprite file */
+  .icon--google-plus-logo-on-black-background {
+    width: 514px;
+    height: 514px;
+    background-position: 75% 0 ;
+  }
+  /* help-round-button icon CSS map in the sprite file */
+  .icon--help-round-button {
+    width: 514px;
+    height: 514px;
+    background-position: 75% 25% ;
+  }
+  /* home-button icon CSS map in the sprite file */
+  .icon--home-button {
+    width: 514px;
+    height: 514px;
+    background-position: 75% 50% ;
+  }
+  /* linkedin-logo icon CSS map in the sprite file */
+  .icon--linkedin-logo {
+    width: 514px;
+    height: 514px;
     background-position: 0 0 ;
   }
-  /* comment icon CSS map in the sprite file */
-  .icon--comment {
-    width: 66px;
-    height: 66px;
-    background-position: 99.71014492753623% 0 ;
+  /* mark-as-favorite-star icon CSS map in the sprite file */
+  .icon--mark-as-favorite-star {
+    width: 514px;
+    height: 514px;
+    background-position: 25% 75% ;
   }
-  /* facebook icon CSS map in the sprite file */
-  .icon--facebook {
-    width: 23.23px;
-    height: 44.01px;
-    background-position: 26.424310365536293% 45.92133741323979% ;
+  /* notifications-button icon CSS map in the sprite file */
+  .icon--notifications-button {
+    width: 514px;
+    height: 514px;
+    background-position: 50% 75% ;
   }
-  /* fire icon CSS map in the sprite file */
-  .icon--fire {
-    width: 58px;
-    height: 66px;
-    background-position: 0 99.58035714285714% ;
+  /* searching-magnifying-glass icon CSS map in the sprite file */
+  .icon--searching-magnifying-glass {
+    width: 514px;
+    height: 514px;
+    background-position: 75% 75% ;
   }
-  /* globe icon CSS map in the sprite file */
-  .icon--globe {
-    width: 66px;
-    height: 66px;
-    background-position: 28.019323671497585% 99.58035714285714% ;
+  /* send-button icon CSS map in the sprite file */
+  .icon--send-button {
+    width: 514px;
+    height: 514px;
+    background-position: 100% 0 ;
   }
-  /* instagram icon CSS map in the sprite file */
-  .icon--instagram {
-    width: 44.01px;
-    height: 44.01px;
-    background-position: 63.059522249879905% 49.25740726919919% ;
+  /* settings-cogwheel-button icon CSS map in the sprite file */
+  .icon--settings-cogwheel-button {
+    width: 514px;
+    height: 514px;
+    background-position: 100% 25% ;
   }
-  /* mail icon CSS map in the sprite file */
-  .icon--mail {
-    width: 66px;
-    height: 50px;
-    background-position: 0 48.0703125% ;
+  /* show-apps-button icon CSS map in the sprite file */
+  .icon--show-apps-button {
+    width: 514px;
+    height: 514px;
+    background-position: 100% 50% ;
   }
-  /* rain icon CSS map in the sprite file */
-  .icon--rain {
-    width: 66px;
-    height: 66px;
-    background-position: 99.71014492753623% 58.92857142857143% ;
+  /* sort-button-with-three-lines icon CSS map in the sprite file */
+  .icon--sort-button-with-three-lines {
+    width: 514px;
+    height: 514px;
+    background-position: 100% 75% ;
   }
-  /* star icon CSS map in the sprite file */
-  .icon--star {
-    width: 66px;
-    height: 66px;
-    background-position: 59.90338164251208% 99.58035714285714% ;
+  /* synchronization-arrows icon CSS map in the sprite file */
+  .icon--synchronization-arrows {
+    width: 514px;
+    height: 514px;
+    background-position: 0 100% ;
   }
-  /* twitter icon CSS map in the sprite file */
-  .icon--twitter {
-    width: 53.78px;
-    height: 44.06px;
-    background-position: 94.15199343125627% 98.55159026429745% ;
+  /* turn-notifications-on-button icon CSS map in the sprite file */
+  .icon--turn-notifications-on-button {
+    width: 514px;
+    height: 514px;
+    background-position: 25% 100% ;
   }
-  /* wifi icon CSS map in the sprite file */
-  .icon--wifi {
-    width: 62px;
-    height: 66px;
-    background-position: 68.43601895734596% 0 ;
+  /* wifi-signal-waves icon CSS map in the sprite file */
+  .icon--wifi-signal-waves {
+    width: 514px;
+    height: 514px;
+    background-position: 50% 100% ;
   }
   /* youtube icon CSS map in the sprite file */
   .icon--youtube {
-    width: 36.75px;
-    height: 44px;
-    background-position: 37.76931216931217% 45.917910447761194% ;
+    width: 457.73px;
+    height: 457.73px;
+    background-position: 97.33604132047513% 97.33604132047513% ;
+  }
+  /* youtube-logo icon CSS map in the sprite file */
+  .icon--youtube-logo {
+    width: 514px;
+    height: 514px;
+    background-position: 75% 100% ;
   }

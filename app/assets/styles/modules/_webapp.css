@@ -1,0 +1,65 @@
+/* Section: webapp */
+.webapp {
+  /* color: red; */
+  /* base line style for smaller screens */
+  background-color: rgba(255, 255, 255, 0.8); /* 0.8 * transparent white */
+  padding: 0 18px 1px 18px;
+  margin-bottom: 80px;   /* cointer margin: -80px; */
+
+  @mixin atLarge {
+    /* Some padding to the edges
+      Bottom margin of the last paragraph creates some space in the bottotm,
+      However when container does not have any bottom padding,
+      the space "leaks out of the container".
+      1px bottom padding of the container element something to push up against :-( */
+    margin-bottom: 0;
+    padding: 0 1.8125rem 1px 1.8125rem;
+
+  }
+  &--last {
+    margin-bottom: 0;
+  }
+  &__photo {  /* modifier for a div element-container, which surrounds the photo */
+    border-radius: 80px; /* pertruding out by default, and invisible */
+    overflow:  hidden; /* whether to clip content or add scrollbars */
+                      /* visible - default, hidden - content clipped */
+    /* now set width and hight of <div> same as the picture image */
+    width: 160px;
+    height: 160px;
+    /* Illusion of circle photo trim created, when border-radius is 1/2 of image side */
+    /* centers image inside the div and clip the picture corners ( overflow: hidden ) */
+    margin: 0 auto -80px auto; /* letting know that 80px of photo is out of container, so line UP */
+    /* top half of the photo must violate container border,
+      use position relative */
+    position: relative;
+    top: -80px; /* Photo is up 80px, and out of container */
+    border: 2px solid rgba(255, 255, 255, 0.8);
+     /* border around photo, in fact around the <div> container  */
+  }
+
+  &__form {
+    /* div element container , which contains form  */
+    color: $mainBlue;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin: 0.25rem 0 1rem 0;
+
+  }
+
+  &__title {
+    color: $mainBlue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: $mainOrange;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.937rem;
+    margin: 0.25rem 0 1rem 0;
+  }
+}

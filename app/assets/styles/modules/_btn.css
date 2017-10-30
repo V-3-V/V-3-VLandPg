@@ -9,11 +9,28 @@
     background-color: $mainOrange;
   }
 
+  &--red {
+    background-color: $mainRed;
+  }
+
+  &--green {
+    background-color: $mainGreen;
+  }
+
   &--large {
     font-size: 1.0rem; /* Baseline font size */
     padding: 1.1rem 1.9rem;
 
-    /* starting from Small screens ~ 530px, use 2.9rem fontsize */
+    /* starting from Small screens ~ 530px, use bigger rem fontsize */
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
+  }
+
+  &--small {
+    font-size: 0.75rem; /* Baseline font size */
+    padding: 0.5rem 1.5rem;
+
     @mixin atSmall {
       font-size: 1.25rem;
     }

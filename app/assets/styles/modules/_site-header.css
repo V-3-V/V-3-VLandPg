@@ -54,7 +54,7 @@
     }
   }
 
-  &__logo__graphic {
+  &__logo--graphic {
     text-indent: -9999px; /* hide text without hiding element itself */
   }
 
@@ -81,8 +81,8 @@
       transition: transform .3s ease-out;
     }
 
-    /* site-header__menu-icon__middle ( MobileMenu.js )*/
-    &__middle {
+    /* site-header__menu-icon--middle ( MobileMenu.js )*/
+    &--middle {
       position: absolute;
       top: 8px;
       left: 0;
@@ -93,9 +93,9 @@
       transform-origin: 0 50%;  /* reason: middle bar is fading to the left */
     }
 
-    /* site-header__menu-icon__bottom ( MobileMenu.js )*/
+    /* site-header__menu-icon--bottom ( MobileMenu.js )*/
     &::after {
-      content: ""; /* appear on the sreen */
+      content: "";
       position: absolute;
       bottom: 0; /* at the very bottom :-) */
       left: 0;
@@ -117,7 +117,7 @@
       transform: rotate(45deg) scaleX(1.25);
     }
 
-    .site-header__menu-icon__middle {
+    .site-header__menu-icon--middle {
       opacity: 0; /* still present, but invisible */
       transform: scaleX(0);
     }

@@ -8,7 +8,8 @@
 
 
 import $ from 'jquery';
-import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints'; // Lib does not have main
+// Lib does not have main, Therefore taking from node_modules folder.
+import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
 
 // attempt to reuse "fade out" effect on other items class="testimonial"
 // by adding .testimonial class to the list of items.

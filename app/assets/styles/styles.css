@@ -34,5 +34,7 @@
 @import "modules/_modal";
 /* Social Icons */
 @import "modules/_social-icons";
-/* Accordion elements*/
+/* Accordion element*/
 @import "modules/_accordion";
+/* Webapp(s) columns*/
+@import "modules/_webapp";

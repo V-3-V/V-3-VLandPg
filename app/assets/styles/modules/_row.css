@@ -1,17 +1,24 @@
-/* Reusable column layout pattern */
-/* Assuming 12 column vertical grid layout */
+
+/*
+  * Reusable column layout pattern
+  * Assuming 12 column (direct child <div> element ) vertical  layout
+  * Each row clear floats of own childs  ( both left & right)
+*/
+/* Problem: Browser will not add padding to the total width of  the row
+    Solution: In recent years "box-sizing: border-box" CSS property ,
+   The property's added into global setting for each element to overwrite
+    browsers defaults ( missing padding in the row width calculations )
+    ( See   base/_global.css )
+
+    Problem:  Set box margins in to control distance
+*/
+
 .row {
-  /* better way to clear floats is ::after pseudo selector */
-  /* the has been moved to base/_mixins "clearfix" for reusability sake */
+  /* the "clearfix" has been moved to base/_mixins.css
+   for reusability sake */
   @mixin clearfix;
-  /*  One of the possible implementations:
-  &::after {
-    content: "";
-    clear:both;
-    display: table;
-  }
-  */
-  /* background-color: yellow; -- for debugging purposes  */
+
+  /* background-color: yellow;  */
 
     &--t-padding { /* Top padding of the row */
       padding-top: 80px ; /* to compensate margin: -80px  */
@@ -34,11 +41,6 @@
 
   &--gutters > div { /* add padding to direct childs (<div>) */
     padding-right: 65px;
-    /* Browser will not add padding to the total width of row */
-    /* In recent years box-sizing: border-box CSS property  */
-    /* It is added into global setting for each element to overwrite
-       browsers defaults ( missing padding in the width calculations )
-       See base/_global.css */
 
   }
 
@@ -117,9 +119,11 @@
       }
   }
 
-  /* Begin Equal Height Rules ( Testimonials section, etc) */
+  /* Begin Equal Height Rules ( Applications section, etc) */
   /*  Works for 96% of browsers, that support flexbox */
-  /* Modernizr.js  sets up the class="flexbox" for us, when it is supported by client's br.*/
+  /* Modernizr.js  sets up the <html class="flexbox"> ,
+       when it is supported by client's browser.
+   */
   .flexbox &--equal-height-at-medium {
     @mixin atMedium {
       display: flex;  /* Using flex box CSS featue */
@@ -144,10 +148,12 @@
 
 }
 
-/* <div class="clear-me">  MUST come after all the floating siblings */
-/* Main parent <div class="row" will know how tall he is */
-/* Is not recommended because the empty div element created in the HTML
+/* <div class="clear-me"/>
+  Is not recommended because the empty div element created in the HTML
   NOT the best practice  */
+/* <div class="clear-me">  MUST come after all the floating elements inside the row*/
+/* Parent <div class="row"> will be able to calculate how tall it is */
+
 /* .clear-me {
     clear: both;
 }

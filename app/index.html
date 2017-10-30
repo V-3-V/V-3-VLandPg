@@ -7,13 +7,13 @@
   <!-- SOA:  disable indexing, and following the links of this page -->
   <!-- Additional robots.txt file  disallows web spiders(bots) to crawl this web site -->
   <meta name="robots" content="noindex, nofollow">
-  <!-- Google fonts  -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Titillium+Web" rel="stylesheet">
+  <!-- Google free fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Titillium+Web:400,100,300,500,700" rel="stylesheet">
   <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'> -->
 
   <title>Creative website</title>
-  <meta name="keywords" content="Information How to, information software installation, information scripts, pet projects information">
-  <meta name="description" content="Side projects. Chat web app. Full stack development.">
+  <meta name="keywords" content="Information how to, information software installation, information scripts, pet projects information">
+  <meta name="description" content="Demo projects. Chat web app. Full stack development.">
 
   <!-- build:css assets/styles/styles.css -->
   <link href='temp/styles/styles.css' rel="stylesheet" type="text/css">
@@ -24,15 +24,14 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrapper">
+    <div class="wrapper"> <!-- Padding Wrapper around text content -->
       <div class="site-header__logo">
-        <div class="site-header__logo__graphic icon"></div>
+        <div class="site-header__logo--graphic icon"></div>
       </div>
-      <!--  Mobile menu  aka sandwich -->
+      <!--  Mobile menu  aka Hamburger -->
       <div class="site-header__menu-icon">
-          <div class="site-header__menu-icon__middle"></div>
+          <div class="site-header__menu-icon--middle"></div>
       </div>
-
       <div class="site-header__menu-content">
         <div class="site-header__btn-container">
           <a href="#" class="btn open-modal">Get in Touch</a>
@@ -59,159 +58,132 @@
       <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Blue sky, white clouds" class="large-hero__image">
     </picture>
     <div class="large-hero__text-content">
-      <div class="wrapper"> <!-- Padding Wrapper around text content -->
+      <div class="wrapper wrapper--large wrapper--b-margin "> <!-- Padding Wrapper around text content -->
           <h1 class="large-hero__title">Your website.</h1>
-          <h2 class="large-hero__subtitle">Can be so beautiful, only you can imagine...</h2>
-          <p class="large-hero__description">Say hello to personalized online  presence.</p>
-          <p><a href="#" class="btn btn--orange btn--large open-modal">Get Started Today</a></p>
+          <h2 class="large-hero__subtitle">So beautiful, only you can imagine...</h2>
+          <p class="large-hero__description">Say hello to customized online  presence.</p>
+          <!--  Todo some animation here, like ?sunrise? -->
       </div> <!--  wrapper -->
     </div>  <!-- large-hero__text-content -->
   </div> <!-- large-hero   -->
 
-  <!--  two horizontal sections (12 column)  ,one vertical with three boxes inside (4 columns each) -->
-  <div id="beginning" class="page-section" data-matching-link="#beginning-link">
-    <div class="wrapper">
-      <h2 class="headline headline--centered headline--light headline--b-margin-small">Beginning</h2>
+  <div id="beginning"  class="page-section page-section--no-b-padding-until-large" data-matching-link="#beginning-link">
+   <div class="wrapper wrapper--large wrapper--b-margin ">
+      <h2 class="headline headline--centered headline--light headline--b-margin-small">Project boilerplate</h2>
       <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Design, build,  deploy web site. </h3>
-      <!-- <div class="wrapper wrapper--large wrapper--b-margin"> -->
-        <!-- Accordion module  _accordion -->
-      <div class="wrapper accordion">
-            <div class="accordion--body">
-            <ul>
-                 <li>  <input type="checkbox" checked class="lev1">
-                     <i></i>
-                     <h4>Design fantastic blueprint of web site</h4>
-                <div>
-                      <ul>
-                          <li>  <input type="checkbox" checked class="lev2">
-                            <i></i>
-                              <h5>Select Typography</h5>
-                                  <div><p>Fonts <a href="https://fonts.google.com/about" target="_blank">Google Free Fonts</a>, sizes,  spacing,  lines</p></div>
-                          </li>
-                          <li> <input type="checkbox" checked class="lev2">
-                            <i></i>
-                            <h5>Select amazing colors.</h5>
-                                  <div><p>Colors and gradients</p></div>
-                          </li>
-                          <li> <input type="checkbox" checked class="lev2">
-                            <i></i>
-                            <h5>Create content.</h5>
-                                <div><p> Texts, images, forms, inputs.</p></div>
-                          </li>
-                          <li> <input type="checkbox" checked class="lev2">
-                            <i></i>
-                            <h5>Special effects</h5>
-                                <div><p>Styling sheets, dynamic features.</p></div>
-                          </li>
-                        </ul>
-                </div>
-              </li>
-                <li>  <input type="checkbox" checked class="lev1">
-                <i></i>
-                <h4>Build web site according to the design.</h4>
-                   <div>
-                        <ul>
-                            <li> <input type="checkbox" checked class="lev2">
-                              <i></i>
-                              <h5>HTML pages</h5>
-                              <div><p>HTML pages HTML forms</p></div>
-                            </li>
-                            <li> <input type="checkbox" checked class="lev2">
-                              <i></i>
-                              <h5>Styling sheets CSS, SCSS, SASS</h5>
-                              <div><p>Styles Styles</p></div>
-                            </li>
-                            <li> <input type="checkbox" checked class="lev2">
-                              <i></i>
-                              <h5>Scripts</h5>
-                              <div><p>scripts scripts</p></div>
-                            </li>
-                        </ul>
-                  </div>
-              </li>
-                  <li>   <input type="checkbox" checked class="lev1">
-                  <i></i>
-              <h4>Deploy website</h4>
-                <div>
+        <div class="row  generic-content-container">  <!-- section with aside layout  -->
+         <!-- Accordion module  _accordion -->
+         <section class="accordion">
+            <div class="accordion__item">
+              <h4 class="accordion__title accordion--js-title">Design fantastic blueprint of web site</h4>
+              <div class="accordion__copy accordion__copy--open accordion--js-copy">
                 <ul>
-                  <li> <input type="checkbox" checked class="lev2">
-                    <i></i>
-                    <h5>Choose Hosting service provider</h5>
-                        <div><p>GitHub, Heroku combination.</p></div>
-                  </li>
-                  <li> <input type="checkbox" checked class="lev2">
-                    <i></i>
-                    <h5>Choose DNS service provider</h5>
-                        <div><p>Godaddy, and others.</p></div>
-                  </li>
-                  <li></li>
+                    <li>
+                        <h5>Choose your own poligraphy</h5>
+                        <p>Fonts <a href="https://fonts.google.com/about" target="_blank">Google Free Fonts</a>, sizes,  spacing,  lines</p>
+                    </li>
+                    <li>
+                        <h5>Select amazing colors.</h5>
+                        <p>Colors and gradients. Something like Colors picker, colors circle</p>
+                    </li>
+                    <li>
+                            <h5>Create content.</h5>
+                            <p> Texts, images, forms, inputs.</p>
+                    </li>
+                    <li>
+                            <h5>Special effects</h5>
+                            <p>Styling sheets, features as animations, etc</p>
+                    </li>
                 </ul>
-                </div>
-             </ul>  <!--  Beginnig ul   -->
-          </div> <!-- class="accordion" -->
-     </div>      <!-- Wrapper wrapper--medium wrapper--b-margin -->
-  </div>   <!-- Wrapper -->
- </div>   <!--  div id="beginning"   -->
+              </div>
+            </div>
 
- <div id="articles" class="page-section" data-matching-link="#articles-link">
-  <div class="wrapper">
-    <h2 class="headline headline--centered headline--light headline--b-margin-small">Articles</h2>
-    <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Software configuration.</h3>
+              <div class="accordion__item">
+              <h4 class="accordion__title accordion--js-title">Build web site according to the design concept.</h4>
+                <div class="accordion__copy  accordion--js-copy">
+                  <ul>
+                    <li>
+                      <h5>Modern HTML</h5>
+                      <p>HTML document stucture. Pages, forms, lists, etc</p>
+                    </li>
+                    <li>
+                      <h5>Up to date Style sheets</h5>
+                        <p>Styles in CSS (SCSS, SASS, others) files</p>
+                    </li>
+                    <li>
+                        <h5>Java Script modules</h5>
+                        <p>Complose, test scripts. Mix with third party modules. Prepare for the deployment in the production</p>
+                    </liPROG
+                  </ul>
+              </div>
+            </div>
 
-    <!-- <div class="wrapper wrapper--medium wrapper--b-margin"> -->
-    <div class="wrapper accordion">
-          <div class="accordion--body">
-            <ul>
-                <li>  <input type="checkbox" checked class="lev1">
-                        <i></i>
-                        <h4>Build workflow</h4>
-                       <div>
+          <div class="accordion__item">
+            <h4 class="accordion__title accordion--js-title">Deploy website in production.</h4>
+            <div class="accordion__copy  accordion--js-copy">
+              <ul>
+                  <li>
+                    <h5>Choose Hosting service provider</h5>
+                    <p>GitHub Pages, Heroku, etc</p>
+                  </li>
+                  <li>
+                      <h5>Choose DNS service provider</h5>
+                      <p>Godaddy, and others.</p>
+                  </li>
+              </ul>
+          </div>
+         </div>
+      </section>    <!-- Accordion   -->
+    </div>
+  </div>
+  </div>     <!-- id= "beginning"  -->
+
+ <div id="articles" class="page-section page-section--no-b-padding-until-large" data-matching-link="#articles-link">
+  <div class="wrapper  wrapper--large wrapper--b-margin">
+    <h2 class="headline headline--centered headline--light headline--b-margin-small">Articles, Cheat Sheets</h2>
+    <h3 class="headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large">Software related</h3>
+      <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
+          <ul>
+                <li>
+                    <h4>Build workflow</h4>
                               <p>Node, gulp, babel, webpack</p>
-                        </div>
                 </li>
-                  <li> <input type="checkbox" checked class="lev1">
-                        <i></i>
+                  <li>
                         <h4>GitHub</h4>
-                        <div>
                               <p>GitHub Pages, static site generator Jekyll </p>
-                        </div>
                 </li>
           </ul>
+    </div>  <!-- row -->
+  </div>   <!--  class="wrapper"  -->
+</div>   <!--  id="articles"  -->
 
-      </div>   <!-- accordion--body  -->
-      </div>  <!-- wrapper accordion -->
-
-    </div>   <!-- div id="articles"  -->
-  </div>   <!-- div class="wrapper"  -->
-
-  <!-- moderizr checks for a "flexbox" support of browser, if not  then fallback to float -->
+  <!--  vertical sections (12 col grid) ,  3 columns (4 columns each) -->
   <div id="webapps" class="page-section page-section--no-b-padding-until-large" data-matching-link="#webapps-link">
     <div class="wrapper wrapper--no-padding-until-large">
       <h2 class="section-title section-title--blue">
         <span class="icon icon--comment section-title__icon"></span>Demo <strong>Web Apps</strong>
       </h2>
-      <!-- Three-Column layout  -->
+      <!-- Three-Column layout, Row definition  -->
       <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container">
-        <div class="row__large-4"> <!-- 3 columns row  12/4 = 3  -->
+        <div class="row__large-4">    <!-- 3 columns row  12/4 = 3  -->
           <div class="webapp">
-            <!-- Start styling from top to bottom. Round photo first in separate div-->
+            <!-- Start column styling from top to bottom. Round photo first in separate div-->
             <div class="webapp__photo">
               <img src="assets/images/chat_bubbles.jpg" alt="Chat App Demo">
             </div> <!--class="webapp__photo" -->
             <h3 class="webapp__title">Demo Chat App</h3>
-            <h4 class="webapp__subtitle"></h4>
-            <p>&ldquo;Demo chat application.&rdquo;</p>
-            <!-- https://stackoverflow.com/questions/6303964/javascript-open-a-given-url-in-a-new-tab-by-clicking-a-button -->
-            <!-- https://polar-depths-68329.herokuapp.com/chat.html?name=ss&room=aa -->
+            <h4 class="webapp__subtitle">&ldquo;Demo chat application.&rdquo;</h4>
+            <!-- Application deployed at https://polar-depths-68329.herokuapp.com/chat.html?name=ss&room=aa -->
+            <div class="webapp__form">
               <form action="https://polar-depths-68329.herokuapp.com/chat.html" method="get" target="_blank">
-                          Name:<br>
-                          <input name="name" type="text"/>
-                          <br>
-                          Chat Room Name:<br>
-                          <input name="room" type="text" />
-                          <br><br>
-                          <input type="submit" value="Join Chat Room" class="btn btn--orange btn--large" />
+                          <!-- for attribute matches to id attribute of input element -->
+                          <label for="name">Display name</label><br>
+                          <input name="name" id="name" type="text"/><br><br>
+                          <label for="room">Room name</label><br>
+                          <input name="room" id="room" type="text" /><br><br>
+                          <input type="submit" value="Join Demo Chat Room" class="btn btn--red btn--small" />
               </form>
+            </div>
           </div> <!-- class="webapp" -->
         </div> <!-- row__large-4 -->
 
@@ -222,8 +194,7 @@
               <img src="assets/images/UnderConstructionSlug.jpg" alt="Data Science Demo">
             </div> <!--class="webapp__photo" -->
             <h3 class="webapp__title">Data science Demo</h3>
-            <h4 class="webapp__subtitle"></h4>
-            <p>&ldquo;Demo data science app. Under construction.&rdquo;</p>
+            <h4 class="webapp__subtitle">&ldquo;Demo data science app. Under construction.&rdquo;</h4>
           </div> <!-- class="webapp" -->
         </div> <!-- row__large-4 -->
 
@@ -234,8 +205,7 @@
               <img src="assets/images/UnderConstructionSlug.jpg" alt="Game Demo">
             </div> <!--class="webapp__photo" -->
             <h3 class="webapp__title">Game Demo</h3>
-            <h4 class="webapp__subtitle"></h4>
-            <p>&ldquo;Game demo. Under construction.&rdquo;</p>
+            <h4 class="webapp__subtitle">&ldquo;Game demo. Under construction.&rdquo;</h4>
           </div> <!-- class="webapp" -->
         </div> <!-- row__large-4 -->
     </div>   <!-- End of Three-Column layout row -->
@@ -244,10 +214,12 @@
 
 <footer class="site-footer">
   <div class="wrapper">
-    <p><span class="site-footer__text">Vlad Vladimirov. 2017.</span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
+    <p><span class="site-footer__text">Vlad Vladimirov. <script type="text/javascript">
+  document.write(new Date().getFullYear());</script></span> <a href="#" class="btn btn--orange open-modal">Get in Touch</a></p>
   </div> <!-- class wrapper -->
 </footer>
 
+<!-- Pop Up window  (aka Modal aka Light House ) with contact Information -->
 <div class="modal">
   <div class="modal__inner">
     <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span>Get in <strong>Touch</strong></h2>
