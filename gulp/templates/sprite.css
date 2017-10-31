@@ -12,7 +12,11 @@
     documentation: https://github.com/jkphl/svg-sprite#configuration-basics
 */
 
-/* Generate list of classes using BEM naming convention */
+/* Generate list of classes using BEM naming convention
+      class = "icon" .icon class is required  in HTML in front of  rest of the element classes
+      
+*/
+
 {{#shapes}}
   {{#first}}
     .icon {
