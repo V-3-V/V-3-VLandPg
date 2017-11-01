@@ -2,7 +2,7 @@
   auto generated from gulp/templates/sprite.css template file */
 
 /*  Moustashe template engine has been used
-    sprite-ec7e89ac.svg  - sprite is variable
+    sprite-baeb2843.svg  - sprite is variable
     where gulp-svg-sprite keeps automatically
     generated file name,  three curvy braces
     prevents special symbols from  escaping -
@@ -18,24 +18,30 @@
 */
 
     .icon {
-      background-image: url('../../assets/images/sprites/sprite-ec7e89ac.svg');
+      background-image: url('../../assets/images/sprites/sprite-baeb2843.svg');
     }
     /* custom modernizr.js script set class="no-svg" (SVG is not supported by  client browser)*/
     /* therefore background image should be in PNG format sprite.png */
     .no-svg .icon {
-      background-image: url('../../assets/images/sprites/sprite-ec7e89ac.png');
+      background-image: url('../../assets/images/sprites/sprite-baeb2843.png');
     }
+  /* VVV-personal-logo icon CSS map in the sprite file */
+  .icon--VVV-personal-logo {
+    width: 87.67px;
+    height: 68.25px;
+    background-position: 99.98716118163816% 0 ;
+  }
   /* add-button-inside-black-circle icon CSS map in the sprite file */
   .icon--add-button-inside-black-circle {
     width: 514px;
     height: 514px;
-    background-position: 24.120131393711873% 0 ;
+    background-position: 47.94776119402985% 75% ;
   }
   /* add-plus-button icon CSS map in the sprite file */
   .icon--add-plus-button {
     width: 514px;
     height: 514px;
-    background-position: 48.240262787423745% 75% ;
+    background-position: 0 75% ;
   }
   /* black-bubble-speech icon CSS map in the sprite file */
   .icon--black-bubble-speech {
@@ -47,19 +53,19 @@
   .icon--chat-bubbles {
     width: 514px;
     height: 514px;
-    background-position: 24.120131393711873% 25% ;
+    background-position: 23.973880597014926% 25% ;
   }
   /* check-box icon CSS map in the sprite file */
   .icon--check-box {
     width: 514px;
     height: 514px;
-    background-position: 48.240262787423745% 0 ;
+    background-position: 47.94776119402985% 0 ;
   }
   /* earth-grid-select-language-button icon CSS map in the sprite file */
   .icon--earth-grid-select-language-button {
     width: 514px;
     height: 514px;
-    background-position: 48.240262787423745% 25% ;
+    background-position: 47.94776119402985% 25% ;
   }
   /* folder-symbol icon CSS map in the sprite file */
   .icon--folder-symbol {
@@ -71,79 +77,79 @@
   .icon--forward-arrow {
     width: 514px;
     height: 514px;
-    background-position: 24.120131393711873% 50% ;
+    background-position: 23.973880597014926% 50% ;
   }
   /* gmail-logo icon CSS map in the sprite file */
   .icon--gmail-logo {
     width: 514px;
     height: 514px;
-    background-position: 48.240262787423745% 50% ;
+    background-position: 47.94776119402985% 50% ;
   }
   /* gmail-logo-min icon CSS map in the sprite file */
   .icon--gmail-logo-min {
     width: 74.51px;
     height: 74.26px;
-    background-position: 99.98093748662707% 2.9706620080617374% ;
+    background-position: 99.47783811820446% 5.705321868463862% ;
   }
   /* google-plus-logo-min icon CSS map in the sprite file */
   .icon--google-plus-logo-min {
     width: 74px;
     height: 74px;
-    background-position: 99.96110462854921% 8.915064102564102% ;
+    background-position: 99.45820433436532% 11.649439102564102% ;
   }
   /* google-plus-logo-on-black-background icon CSS map in the sprite file */
   .icon--google-plus-logo-on-black-background {
     width: 514px;
     height: 514px;
-    background-position: 72.36039418113562% 50% ;
+    background-position: 71.92164179104478% 50% ;
   }
   /* help-round-button icon CSS map in the sprite file */
   .icon--help-round-button {
     width: 514px;
     height: 514px;
-    background-position: 0 75% ;
+    background-position: 0 0 ;
   }
   /* home-button icon CSS map in the sprite file */
   .icon--home-button {
     width: 514px;
     height: 514px;
-    background-position: 24.120131393711873% 75% ;
+    background-position: 23.973880597014926% 75% ;
   }
   /* linkedin-logo icon CSS map in the sprite file */
   .icon--linkedin-logo {
     width: 514px;
     height: 514px;
-    background-position: 0 0 ;
+    background-position: 23.973880597014926% 0 ;
   }
   /* linkedin-logo-min icon CSS map in the sprite file */
   .icon--linkedin-logo-min {
     width: 74.78px;
     height: 74.14px;
-    background-position: 99.99144042144253% 0 ;
+    background-position: 99.48823561291722% 2.7345283789956167% ;
   }
   /* mark-as-favorite-star icon CSS map in the sprite file */
   .icon--mark-as-favorite-star {
     width: 514px;
     height: 514px;
-    background-position: 96.48052557484749% 0 ;
+    background-position: 95.8955223880597% 0 ;
   }
   /* notifications-button icon CSS map in the sprite file */
   .icon--notifications-button {
     width: 514px;
     height: 514px;
-    background-position: 96.48052557484749% 25% ;
+    background-position: 95.8955223880597% 25% ;
   }
   /* searching-magnifying-glass icon CSS map in the sprite file */
   .icon--searching-magnifying-glass {
     width: 514px;
     height: 514px;
-    background-position: 96.48052557484749% 50% ;
+    background-position: 95.8955223880597% 50% ;
   }
   /* send-button icon CSS map in the sprite file */
   .icon--send-button {
     width: 514px;
     height: 514px;
-    background-position: 96.48052557484749% 75% ;
+    background-position: 95.8955223880597% 75% ;
   }
   /* settings-cogwheel-button icon CSS map in the sprite file */
   .icon--settings-cogwheel-button {
@@ -155,47 +161,47 @@
   .icon--show-apps-button {
     width: 514px;
     height: 514px;
-    background-position: 24.120131393711873% 100% ;
+    background-position: 23.973880597014926% 100% ;
   }
   /* sort-button-with-three-lines icon CSS map in the sprite file */
   .icon--sort-button-with-three-lines {
     width: 514px;
     height: 514px;
-    background-position: 48.240262787423745% 100% ;
+    background-position: 47.94776119402985% 100% ;
   }
   /* synchronization-arrows icon CSS map in the sprite file */
   .icon--synchronization-arrows {
     width: 514px;
     height: 514px;
-    background-position: 72.36039418113562% 100% ;
+    background-position: 71.92164179104478% 0 ;
   }
   /* turn-notifications-on-button icon CSS map in the sprite file */
   .icon--turn-notifications-on-button {
     width: 514px;
     height: 514px;
-    background-position: 72.36039418113562% 75% ;
+    background-position: 71.92164179104478% 100% ;
   }
   /* wifi-signal-waves icon CSS map in the sprite file */
   .icon--wifi-signal-waves {
     width: 514px;
     height: 514px;
-    background-position: 72.36039418113562% 25% ;
+    background-position: 71.92164179104478% 75% ;
   }
   /* youtube-button icon CSS map in the sprite file */
   .icon--youtube-button {
     width: 514px;
     height: 514px;
-    background-position: 72.36039418113562% 0 ;
+    background-position: 71.92164179104478% 25% ;
   }
   /* youtube-logo icon CSS map in the sprite file */
   .icon--youtube-logo {
     width: 457.73px;
     height: 457.73px;
-    background-position: 93.99845469466504% 97.33604132047513% ;
+    background-position: 93.44307744049594% 97.33604132047513% ;
   }
   /* youtube-logo-min icon CSS map in the sprite file */
   .icon--youtube-logo-min {
     width: 74.12px;
     height: 74.12px;
-    background-position: 99.9657704754792% 5.945798676218407% ;
+    background-position: 99.46282335092961% 8.680305142875456% ;
   }

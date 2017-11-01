@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,37 +10,54 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="11in"
-   height="8.5in"
-   viewBox="0 0 279.4 215.9"
+   width="0.89239204in"
+   height="0.69007099in"
+   viewBox="0 0 22.666758 17.527803"
    version="1.1"
-   id="svg10454"
+   id="svg9053"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="VVV-personal-logo.svg">
   <defs
-     id="defs10448" />
+     id="defs9047">
+    <linearGradient
+       id="linearGradient9200"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#f3ff00;stop-opacity:1;"
+         offset="0"
+         id="stop9198" />
+    </linearGradient>
+  </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#0f3a53"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0.3372549"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
-     inkscape:document-units="in"
+     inkscape:cx="-950.48959"
+     inkscape:cy="-209.43171"
+     inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1264"
-     inkscape:window-height="823"
-     inkscape:window-x="79"
-     inkscape:window-y="22"
-     inkscape:window-maximized="0"
+     showgrid="true"
      units="in"
-     showborder="false" />
+     inkscape:showpageshadow="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1005"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:pagecheckerboard="false"
+     showborder="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid9055"
+       originx="-479.78135"
+       originy="-294.29311" />
+  </sodipodi:namedview>
   <metadata
-     id="metadata10451">
+     id="metadata9050">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -54,51 +72,28 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-81.1)">
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:6.61458302px;font-family:Calibri;-inkscape-font-specification:'Calibri Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="66.523811"
-       y="46.0238"
-       id="text10458"><tspan
-         sodipodi:role="line"
-         id="tspan10456"
-         x="66.523811"
-         y="46.0238"
-         style="stroke-width:0.26458332">VVV</tspan></text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot10460"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.66666603px;line-height:6.94000006em;font-family:Calibri;-inkscape-font-specification:'Calibri Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(0.26458333)"><flowRegion
-         id="flowRegion10462"
-         style="line-height:0.9375em"><rect
-           id="rect10464"
-           width="117.14286"
-           height="42.857143"
-           x="225.71428"
-           y="162.51965"
-           style="line-height:0.9375em" /></flowRegion><flowPara
-         id="flowPara10466"></flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05555534px;line-height:6.61458302px;font-family:Calibri;-inkscape-font-specification:'Calibri Italic';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="71.059525"
-       y="49.803562"
-       id="text10470"><tspan
-         sodipodi:role="line"
-         id="tspan10468"
-         x="71.059525"
-         y="49.803562"
-         style="stroke-width:0.26458332">vvvvv</tspan></text>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot10472"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Calibri;font-style:italic;font-weight:normal;font-size:26.66666667px;line-height:25px;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Calibri Italic';font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion10474"><rect
-           id="rect10476"
-           width="531.42859"
-           height="297.14285"
-           x="48.57143"
-           y="-229.71428" /></flowRegion><flowPara
-         id="flowPara10478"></flowPara></flowRoot>  </g>
+     transform="translate(-83.40634,-175.1791)"
+     style="opacity:0.77899996">
+    <g
+       aria-label="VVV"
+       transform="matrix(0.16722024,-0.02873296,0,0.2715847,70.950063,127.30755)"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80.77253723px;line-height:10.51725864px;font-family:Calibri;-inkscape-font-specification:'Calibri Italic';letter-spacing:0px;word-spacing:0px;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:1.24155354"
+       id="text9059">
+      <path
+         d="m 90.857727,248.34543 q -0.276078,0.43384 -0.591596,0.70992 -0.315518,0.27608 -0.828234,0.43384 -0.512716,0.15775 -1.301511,0.19719 -0.788794,0.0789 -1.971985,0.0789 -1.262071,0 -2.090305,-0.0789 -0.828234,-0.0394 -1.301511,-0.19719 -0.473276,-0.15776 -0.709915,-0.43384 -0.197198,-0.31552 -0.236638,-0.74936 l -7.217468,-47.72205 q -0.118319,-0.74936 -0.118319,-1.22263 0.03944,-0.47328 0.354957,-0.70992 0.354958,-0.23664 1.025433,-0.31552 0.709915,-0.0789 1.932546,-0.0789 1.183191,0 1.853667,0.0789 0.709915,0.0394 1.104312,0.1972 0.394397,0.15776 0.512716,0.43384 0.157759,0.27608 0.236638,0.67048 l 5.955397,42.91041 h 0.03944 l 22.756719,-42.94985 q 0.1972,-0.3944 0.43383,-0.63104 0.27608,-0.27608 0.70992,-0.43384 0.43384,-0.15776 1.14375,-0.1972 0.74935,-0.0789 1.93255,-0.0789 1.22263,0 1.93254,0.11831 0.70992,0.0789 0.986,0.35496 0.27607,0.27608 0.15775,0.82824 -0.11831,0.51271 -0.59159,1.38039 z"
+         style="fill:#ffcc00;fill-opacity:1;stroke-width:1.24155354"
+         id="path14828"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 137.08107,248.34543 q -0.27607,0.43384 -0.59159,0.70992 -0.31552,0.27608 -0.82824,0.43384 -0.51271,0.15775 -1.30151,0.19719 -0.78879,0.0789 -1.97198,0.0789 -1.26207,0 -2.09031,-0.0789 -0.82823,-0.0394 -1.30151,-0.19719 -0.47327,-0.15776 -0.70991,-0.43384 -0.1972,-0.31552 -0.23664,-0.74936 l -7.21747,-47.72205 q -0.11832,-0.74936 -0.11832,-1.22263 0.0394,-0.47328 0.35496,-0.70992 0.35496,-0.23664 1.02543,-0.31552 0.70992,-0.0789 1.93255,-0.0789 1.18319,0 1.85366,0.0789 0.70992,0.0394 1.10432,0.1972 0.39439,0.15776 0.51271,0.43384 0.15776,0.27608 0.23664,0.67048 l 5.9554,42.91041 h 0.0394 l 22.75671,-42.94985 q 0.1972,-0.3944 0.43384,-0.63104 0.27608,-0.27608 0.70992,-0.43384 0.43383,-0.15776 1.14375,-0.1972 0.74935,-0.0789 1.93254,-0.0789 1.22263,0 1.93255,0.11831 0.70991,0.0789 0.98599,0.35496 0.27608,0.27608 0.15776,0.82824 -0.11832,0.51271 -0.59159,1.38039 z"
+         style="fill:#ffcc00;fill-opacity:1;stroke-width:1.24155354"
+         id="path14830"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 183.30442,248.34543 q -0.27608,0.43384 -0.5916,0.70992 -0.31551,0.27608 -0.82823,0.43384 -0.51272,0.15775 -1.30151,0.19719 -0.78879,0.0789 -1.97199,0.0789 -1.26207,0 -2.0903,-0.0789 -0.82823,-0.0394 -1.30151,-0.19719 -0.47328,-0.15776 -0.70992,-0.43384 -0.19719,-0.31552 -0.23663,-0.74936 l -7.21747,-47.72205 q -0.11832,-0.74936 -0.11832,-1.22263 0.0394,-0.47328 0.35496,-0.70992 0.35495,-0.23664 1.02543,-0.31552 0.70991,-0.0789 1.93254,-0.0789 1.1832,0 1.85367,0.0789 0.70992,0.0394 1.10431,0.1972 0.3944,0.15776 0.51272,0.43384 0.15776,0.27608 0.23664,0.67048 l 5.95539,42.91041 h 0.0394 l 22.75672,-42.94985 q 0.1972,-0.3944 0.43384,-0.63104 0.27608,-0.27608 0.70991,-0.43384 0.43384,-0.15776 1.14375,-0.1972 0.74936,-0.0789 1.93255,-0.0789 1.22263,0 1.93255,0.11831 0.70991,0.0789 0.98599,0.35496 0.27608,0.27608 0.15776,0.82824 -0.11832,0.51271 -0.5916,1.38039 z"
+         style="fill:#ffcc00;fill-opacity:1;stroke-width:1.24155354"
+         id="path14832"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
 </svg>
